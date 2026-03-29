@@ -2194,6 +2194,72 @@ setTimeout(checkRelance, 10000);
 setTimeout(function(){ buildBoCharts(); }, 1000);
 
 </script>
-<script src="etudiant.js"></script>
+<script>
+var SUPPORTS={'fr':['📄 Fascicule TCF/DELF','🎵 Audio MP3','📹 Vidéo Oral','📋 Fiches Grammaire','✅ 200 Exercices'],'en':['📄 IELTS Guide','🎵 Listening MP3','📹 Speaking Videos','📋 Grammar Sheets','✅ 200 Exercises'],'de':['📄 Goethe Lernheft','🎵 Hören Audio','📹 Sprechen Video','📋 Grammatik','✅ 200 Übungen'],'es':['📄 Manual DELE','🎵 Audio Oral','📹 Video Oral','📋 Gramática','✅ 200 Ejercicios'],'it':['📄 Manuale CILS','🎵 Audio Orale','📹 Video Orale','📋 Grammatica','✅ 200 Esercizi'],'ru':['📄 Учебник','🎵 Аудио','📹 Видео','📋 Грамматика','✅ 200 упражнений'],'zh':['📄 HSK教材','🎵 听力MP3','📹 口语视频','📋 语法表','✅ 200练习']};
+var SESS={'fr':'Samedi 5 Avril · 09h00','en':'Samedi 5 Avril · 14h00','de':'Samedi 12 Avril · 09h00','es':'Samedi 12 Avril · 14h00','it':'Samedi 19 Avril · 09h00','ru':'Samedi 19 Avril · 14h00','zh':'Samedi 26 Avril · 09h00'};
+function getLK(l){if(!l)return'fr';l=l.toLowerCase();if(l.includes('fran')||l.includes('tcf'))return'fr';if(l.includes('angl')||l.includes('engl')||l.includes('ielts'))return'en';if(l.includes('allem')||l.includes('goethe'))return'de';if(l.includes('espag')||l.includes('dele'))return'es';if(l.includes('itali')||l.includes('cils'))return'it';if(l.includes('russe')||l.includes('trki'))return'ru';if(l.includes('chin')||l.includes('hsk'))return'zh';return'fr';}
+function genEtuCode(id,prenom){
+  var code=String(Math.floor(1000+Math.random()*9000));
+  var students=JSON.parse(localStorage.getItem('tfg_students')||'[]');
+  var r=inscriptions.find(function(x){return x.id===id;});
+  students=students.filter(function(s){return s.id!==id;});
+  students.push({id:id,prenom:prenom,code:code,lang:r?r.lang:'',statut:r?r.statut:'Nouveau'});
+  localStorage.setItem('tfg_students',JSON.stringify(students));
+  alert('Code de '+prenom+' : '+code);
+  if(r&&r.tel&&r.tel!=='—'){window.open('https://wa.me/'+r.tel.replace(/\D/g,'')+'?text='+encodeURIComponent('Bonjour '+prenom+' ! 🎓\nCode TFG : '+code+'\n\nhttps://tfg-institute.pages.dev → Mon Espace'),'_blank');}
+}
+function etuLogin(){
+  var prenom=document.getElementById('etu-prenom').value.trim();
+  var code=document.getElementById('etu-code').value.trim();
+  if(!prenom||!code){alert('Entrez prénom et code.');return;}
+  var stored=JSON.parse(localStorage.getItem('tfg_inscriptions')||'[]');
+  var found=stored.find(function(r){return r.prenom.toLowerCase()===prenom.toLowerCase();});
+  var students=JSON.parse(localStorage.getItem('tfg_students')||'[]');
+  var foundS=students.find(function(s){return s.prenom.toLowerCase()===prenom.toLowerCase()&&s.code===code;});
+  var DEMO={'1234':true,'2024':true,'2025':true,'9999':true};
+  if(foundS||found||DEMO[code]){
+    document.getElementById('etu-login-screen').style.display='none';
+    document.getElementById('etu-dashboard').style.display='block';
+    document.getElementById('etu-nom').textContent='Bienvenue, '+prenom+' ! 👋';
+    document.getElementById('etu-err').style.display='none';
+    var lang=found?found.lang:(foundS?foundS.lang:'Français TCF/DELF');
+    document.getElementById('etu-lang-info').textContent=lang;
+    var lk=getLK(lang);
+    var score=null;
+    if(found&&found.message&&found.message.includes('Score:'))score=parseInt(found.message.split('Score:')[1]);
+    var lvl=score===null?'A1':score<=2?'A1':score<=4?'A2':score<=6?'B1':score<=7?'B2':score<=9?'C1':'C2';
+    var tgt={A1:'B1',A2:'B2',B1:'B2',B2:'C1',C1:'C2',C2:'C2'}[lvl];
+    var niv={A1:1,A2:2,B1:3,B2:4,C1:5,C2:6};
+    var pct=Math.round(niv[lvl]/niv[tgt]*100);
+    document.getElementById('etu-lvl-curr').textContent=lvl;
+    document.getElementById('etu-lvl-target').textContent=tgt;
+    document.getElementById('etu-prog').style.width=Math.min(pct,100)+'%';
+    document.getElementById('etu-prog-txt').textContent=niv[lvl]+' niveau(x) sur '+niv[tgt]+' vers '+tgt;
+    var cols={A1:'#4ade80',A2:'#86efac',B1:'#fbbf24',B2:'#f97316',C1:'#f43f5e',C2:'#e879f9'};
+    if(score!==null){
+      document.getElementById('etu-tests-list').innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;padding:9px;background:rgba(255,255,255,.05);border-radius:9px"><div><div style="color:#fff;font-size:.8rem;font-weight:600">'+lang+'</div><div style="color:rgba(255,255,255,.4);font-size:.65rem">Test diagnostic</div></div><div style="text-align:right"><div style="color:var(--gold);font-weight:700;font-size:1.1rem">'+score+'/10</div><div style="display:inline-block;font-size:.65rem;font-weight:700;padding:2px 8px;border-radius:20px;background:'+cols[lvl]+'22;color:'+cols[lvl]+'">'+lvl+'</div></div></div>';
+      document.getElementById('etu-cert-zone').innerHTML='<div style="background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.3);border-radius:10px;padding:12px;text-align:center"><div style="font-size:1.3rem;margin-bottom:4px">🏆</div><div style="color:#fff;font-size:.85rem;margin-bottom:3px">Certificat disponible</div><div style="color:var(--gold);font-size:.75rem;margin-bottom:8px">'+lang+' · '+lvl+' · '+score+'/10</div><button class="cta-primary" onclick="showPage(\'certificate\')" style="font-size:.78rem;padding:8px 14px">Voir mon certificat →</button></div>';
+    }
+    var sup=SUPPORTS[lk]||SUPPORTS.fr;
+    document.getElementById('etu-supports').innerHTML=sup.map(function(s){return'<div style="display:flex;align-items:center;justify-content:space-between;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.05)"><span style="color:rgba(255,255,255,.72);font-size:.76rem">'+s+'</span><a href="https://wa.me/237674373396?text='+encodeURIComponent('Je veux accéder au support : '+s)+'" target="_blank" style="font-size:.65rem;color:var(--gold);border:1px solid rgba(212,175,55,.3);padding:2px 8px;border-radius:5px;text-decoration:none;white-space:nowrap;margin-left:6px">Accéder</a></div>';}).join('');
+    document.getElementById('etu-next-session').innerHTML='<div style="display:flex;gap:7px"><span style="color:var(--gold)">📅</span><span>'+(SESS[lk]||SESS.fr)+'</span></div><div style="display:flex;gap:7px;margin-top:5px"><span style="color:var(--gold)">📍</span><span>Centre TFG · Nkolfulou, Yaoundé</span></div><div style="display:flex;gap:7px;margin-top:5px"><span style="color:var(--gold)">📞</span><span>+237 674 373 396</span></div><a href="https://wa.me/237674373396?text='+encodeURIComponent('Je confirme ma place : '+lang)+'" target="_blank" class="cta-wa" style="margin-top:10px;font-size:.78rem">✅ Confirmer ma place</a>';
+    var badges=[{i:'🎯',l:'Test passé',c:'rgba(212,175,55,.12)',b:'rgba(212,175,55,.35)'},{i:'📚',l:'Etudiant TFG',c:'rgba(56,189,248,.1)',b:'rgba(56,189,248,.3)'}];
+    if(score>=7)badges.push({i:'⭐',l:'Excellent',c:'rgba(139,92,246,.12)',b:'rgba(139,92,246,.35)'});
+    if(score===10)badges.push({i:'🏆',l:'Score parfait',c:'rgba(212,175,55,.2)',b:'rgba(212,175,55,.6)'});
+    document.getElementById('etu-badges').innerHTML=badges.map(function(b){return'<span class="etu-badge" style="background:'+b.c+';border:1px solid '+b.b+';color:#fff;margin:3px">'+b.i+' '+b.l+'</span>';}).join('');
+  }else{
+    document.getElementById('etu-err').style.display='block';
+    setTimeout(function(){document.getElementById('etu-err').style.display='none';},4000);
+  }
+}
+function etuLogout(){
+  document.getElementById('etu-login-screen').style.display='block';
+  document.getElementById('etu-dashboard').style.display='none';
+  document.getElementById('etu-prenom').value='';
+  document.getElementById('etu-code').value='';
+}
+</script>
+</body>
+</html>
 </body>
 </html>

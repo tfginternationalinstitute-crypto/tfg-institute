@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>TFG Internationale Institute Language</title>
+<meta name="description" content="Centre de langues certifié à Yaoundé. TCF, DELF, IELTS, immigration, études à l'étranger."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--gold:#D4AF37;--gold2:#b8941e;--dark:#000d1a;--navy:#001845;--card:rgba(255,255,255,.07);--border:rgba(255,255,255,.11);--text:rgba(255,255,255,.75);--muted:rgba(255,255,255,.38)}
+body{font-family:'DM Sans',sans-serif;background:var(--dark);color:#fff;min-height:100vh;overflow-x:hidden}
+.app{display:flex;flex-direction:column;align-items:center}
+.bg-grid{position:fixed;inset:0;z-index:0;background-image:linear-gradient(rgba(212,175,55,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(212,175,55,.04) 1px,transparent 1px);background-size:40px 40px;pointer-events:none}
+.orb{position:fixed;border-radius:50%;filter:blur(100px);pointer-events:none;z-index:0;animation:orb 12s ease-in-out infinite}
+.o1{width:500px;height:500px;background:radial-gradient(circle,rgba(212,175,55,.12) 0%,transparent 70%);top:-150px;right:-150px}
+.o2{width:400px;height:400px;background:radial-gradient(circle,rgba(0,80,255,.1) 0%,transparent 70%);bottom:0;left:-100px;animation-delay:-6s}
+@keyframes orb{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-40px)}}
+.urgency{width:100%;background:linear-gradient(90deg,#dc2626,var(--gold),#dc2626);background-size:200% 100%;animation:urg 4s linear infinite;padding:8px;text-align:center;font-size:.72rem;font-weight:700;color:#fff;position:sticky;top:0;z-index:200}
+@keyframes urg{0%{background-position:0%}100%{background-position:200%}}
+nav{position:sticky;top:32px;z-index:100;width:100%;background:rgba(0,13,26,.92);backdrop-filter:blur(24px);border-bottom:1px solid rgba(212,175,55,.12);padding:10px 16px;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center;gap:9px;cursor:pointer;text-decoration:none}
+.nav-logo{width:34px;height:34px;border-radius:8px;border:1px solid rgba(212,175,55,.4);object-fit:cover}
+.nav-name{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.1rem;color:var(--gold);letter-spacing:2px;line-height:1}
+.nav-sub{font-size:.5rem;color:rgba(212,175,55,.5);letter-spacing:1px;text-transform:uppercase}
+.nav-links{display:flex;gap:5px;flex-wrap:wrap}
+.nb{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:6px 10px;color:rgba(255,255,255,.7);font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:500;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:4px;white-space:nowrap}
+.nb:hover{background:rgba(255,255,255,.12);color:#fff}
+.nb.gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#001234;font-weight:700;border:none}
+.page{width:100%;max-width:700px;padding:0 16px 60px;position:relative;z-index:2}
+.hero{position:relative;width:100%;min-height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:44px 20px 32px;overflow:hidden;margin:0 -16px 24px;width:calc(100% + 32px);border-radius:0 0 24px 24px}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.2)}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,13,26,.4),rgba(0,13,26,.9))}
+.hero-content{position:relative;z-index:1}
+.hero-tag{display:inline-flex;align-items:center;gap:7px;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.3);border-radius:50px;padding:6px 16px;margin-bottom:16px;font-size:.68rem;font-weight:700;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,6vw,3rem);font-weight:700;color:#fff;line-height:1.1;margin-bottom:10px}
+.hero-title em{color:var(--gold);font-style:italic}
+.hero-sub{color:rgba(255,255,255,.52);font-size:.85rem;line-height:1.7;max-width:460px;margin:0 auto 22px}
+.hero-btns{display:flex;gap:9px;justify-content:center;flex-wrap:wrap}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));border:none;border-radius:12px;padding:12px 20px;color:#001234;font-family:'DM Sans',sans-serif;font-size:.86rem;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:7px;transition:all .22s;box-shadow:0 4px 18px rgba(212,175,55,.35);text-decoration:none}
+.btn-gold:hover{transform:translateY(-2px)}
+.btn-clear{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:12px 20px;color:#fff;font-family:'DM Sans',sans-serif;font-size:.86rem;font-weight:500;cursor:pointer;display:inline-flex;align-items:center;gap:7px;transition:all .22s;text-decoration:none}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:28px}
+@media(min-width:480px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:13px 9px;text-align:center;transition:all .22s}
+.stat:hover{border-color:rgba(212,175,55,.3);transform:translateY(-2px)}
+.stat-val{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;color:var(--gold);line-height:1}
+.stat-lbl{color:var(--muted);font-size:.65rem;margin-top:3px}
+.sec{margin-bottom:18px}
+.sdiv{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.sl{flex:1;height:1px;background:rgba(255,255,255,.07)}
+.st{color:rgba(212,175,55,.6);font-size:.62rem;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:#fff;margin-bottom:3px}
+.sec-sub{color:var(--muted);font-size:.75rem;line-height:1.5}
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+@media(max-width:480px){.svc-grid{grid-template-columns:1fr}}
+.svc{background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:all .22s}
+.svc:hover{border-color:rgba(212,175,55,.3);transform:translateY(-2px)}
+.svc img{width:100%;height:110px;object-fit:cover;filter:brightness(.6) saturate(.8);display:block}
+.svc-body{padding:14px}
+.svc-icon{font-size:1.5rem;margin-bottom:7px}
+.svc-name{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:700;color:#fff;margin-bottom:3px}
+.svc-desc{color:var(--gold);font-size:.7rem;font-weight:600;margin-bottom:5px}
+.svc-detail{color:var(--muted);font-size:.7rem;line-height:1.5}
+.pack{background:linear-gradient(135deg,rgba(212,175,55,.1),rgba(0,40,120,.5));border:2px solid rgba(212,175,55,.35);border-radius:20px;padding:22px;margin-bottom:28px;position:relative}
+.pack img{width:100%;height:120px;object-fit:cover;border-radius:11px;margin-bottom:12px;filter:brightness(.6) saturate(.7);display:block}
+.pack-badge{position:absolute;top:16px;right:16px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#001234;font-weight:900;font-size:.82rem;padding:4px 11px;border-radius:20px}
+.pack-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:700;color:#fff;margin-bottom:4px}
+.pack-price{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--gold);margin-bottom:13px}
+.pack-list{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.pack-item{display:flex;align-items:center;gap:8px;color:var(--text);font-size:.8rem}
+.slider-outer{overflow:hidden;border-radius:20px;margin-bottom:10px}
+.slider-track{display:flex;transition:transform .5s cubic-bezier(.4,0,.2,1)}
+.slide{min-width:100%;padding:20px;background:var(--navy);border-radius:20px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.slide img{width:100%;height:155px;object-fit:cover;border-radius:14px;margin-bottom:13px;filter:brightness(.65) saturate(.85);display:block}
+.slide-flag{font-size:1.5rem;margin-bottom:4px}
+.slide-title{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:700;color:#fff;margin-bottom:2px}
+.slide-sub{color:rgba(212,175,55,.7);font-size:.72rem;margin-bottom:8px}
+.slide-pays{background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.2);border-radius:9px;padding:7px 11px;margin-bottom:8px;width:100%;max-width:320px}
+.slide-pays-lbl{color:rgba(212,175,55,.6);font-size:.58rem;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:2px}
+.slide-pays-val{color:#fff;font-size:.74rem;font-weight:600}
+.slide-rows{display:flex;flex-direction:column;gap:4px;margin-bottom:12px;width:100%;max-width:320px}
+.slide-row{display:flex;align-items:center;gap:6px;color:rgba(255,255,255,.65);font-size:.73rem}
+.slide-price{color:var(--gold);font-weight:700;font-size:.85rem}
+.slider-nav{display:flex;justify-content:center;align-items:center;gap:10px;margin-bottom:28px;margin-top:10px}
+.snav-btn{background:var(--card);border:1px solid var(--border);border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;color:var(--text);font-size:1rem}
+.snav-btn:hover{background:rgba(255,255,255,.12);color:#fff}
+.sdots{display:flex;gap:5px;align-items:center}
+.sdot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.2);transition:all .3s;cursor:pointer}
+.sdot.on{background:var(--gold);width:18px;border-radius:3px}
+.lang-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:28px}
+@media(min-width:500px){.lang-grid{grid-template-columns:repeat(4,1fr)}}
+.lang-btn{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 7px;cursor:pointer;transition:all .25s;text-align:center;position:relative;overflow:hidden}
+.lang-btn:hover{border-color:rgba(212,175,55,.5);transform:translateY(-3px)}
+.lang-flag{font-size:1.7rem;margin-bottom:4px;display:block}
+.lang-name{color:#fff;font-weight:600;font-size:.71rem;display:block;line-height:1.3}
+.lang-lvl{color:rgba(212,175,55,.7);font-size:.59rem;margin-top:2px;display:block}
+.levels{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-bottom:28px}
+.lvl-pill{padding:4px 12px;border-radius:20px;font-size:.73rem;font-weight:700}
+.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:28px}
+.photo-grid img{width:100%;height:110px;object-fit:cover;border-radius:13px;filter:brightness(.72) saturate(.9);display:block}
+.testi-list{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+.testi{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px}
+.testi-top{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.testi-av{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:.95rem;font-weight:700;color:#001234;flex-shrink:0}
+.testi-name{color:#fff;font-weight:700;font-size:.85rem}
+.testi-meta{color:var(--muted);font-size:.67rem}
+.testi-score{background:rgba(212,175,55,.14);border:1px solid rgba(212,175,55,.28);border-radius:7px;padding:2px 8px;color:var(--gold);font-size:.68rem;font-weight:700;margin-left:auto}
+.testi-stars{color:var(--gold);font-size:.8rem;margin-bottom:4px}
+.testi-text{color:rgba(255,255,255,.52);font-size:.79rem;line-height:1.65;font-style:italic}
+.faq-list{display:flex;flex-direction:column;gap:7px;margin-bottom:28px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:13px;overflow:hidden}
+.faq-item.open{border-color:rgba(212,175,55,.28)}
+.faq-btn{width:100%;background:none;border:none;padding:13px 15px;text-align:left;display:flex;justify-content:space-between;align-items:center;cursor:pointer;gap:9px;color:#fff;font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:600}
+.faq-ans{padding:0 15px 12px;color:var(--text);font-size:.77rem;line-height:1.65;display:none}
+.faq-item.open .faq-ans{display:block}
+.contact-card{background:linear-gradient(135deg,rgba(212,175,55,.07),rgba(0,40,120,.4));border:1px solid rgba(212,175,55,.2);border-radius:20px;padding:22px;margin-bottom:20px}
+.contact-card img{width:100%;height:120px;object-fit:cover;border-radius:11px;margin-bottom:13px;filter:brightness(.55) saturate(.7);display:block}
+.contact-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:4px}
+.contact-sub{color:var(--muted);font-size:.77rem;margin-bottom:13px;line-height:1.5}
+.contact-rows{display:flex;flex-direction:column;gap:7px;margin-bottom:15px}
+.crow{display:flex;align-items:center;gap:8px;color:var(--text);font-size:.79rem}
+.crow b{color:var(--gold);font-weight:600}
+.ctarow{display:flex;flex-direction:column;gap:8px}
+.cta-wa{background:linear-gradient(135deg,#25D366,#1aab52);border:none;border-radius:11px;padding:12px;color:#fff;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .22s;text-decoration:none}
+.cta-wa:hover{transform:translateY(-1px)}
+.cta-sec{background:var(--card);border:1px solid var(--border);border-radius:11px;padding:10px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:.79rem;font-weight:500;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;transition:all .22s;text-decoration:none}
+.cta-sec:hover{background:rgba(255,255,255,.1);color:#fff}
+.cta-primary{background:linear-gradient(135deg,var(--gold),var(--gold2));border:none;border-radius:11px;padding:12px;color:#001234;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;transition:all .22s;width:100%}
+.cta-primary:hover{transform:translateY(-1px)}
+.gc{background:rgba(255,255,255,.06);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.12);border-radius:22px;box-shadow:0 8px 40px rgba(0,0,0,.32);position:relative;z-index:2;width:100%;max-width:700px;margin:14px 0}
+.qwrap{padding:22px}
+.bbtn{background:var(--card);border:1px solid var(--border);border-radius:9px;padding:6px 11px;color:var(--text);cursor:pointer;font-size:.72rem;font-family:'DM Sans',sans-serif;display:inline-flex;align-items:center;gap:5px;transition:all .2s}
+.bbtn:hover{background:rgba(255,255,255,.12);color:#fff}
+.qhdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px}
+.prog-bar-wrap{margin-bottom:15px}
+.prog-top{display:flex;justify-content:space-between;margin-bottom:5px;font-size:.69rem}
+.prog-bar{height:5px;background:rgba(255,255,255,.09);border-radius:10px;overflow:hidden}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--gold),#f5d76e);border-radius:10px;transition:width .5s}
+.lvl-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:20px;font-size:.65rem;font-weight:700;letter-spacing:.5px;margin-bottom:11px}
+.q-text{font-family:'Cormorant Garamond',serif;font-size:clamp(.97rem,3vw,1.15rem);color:#fff;line-height:1.7;margin-bottom:15px}
+.q-text em{color:var(--gold);font-style:normal;border-bottom:1px dashed rgba(212,175,55,.5)}
+.opts{display:flex;flex-direction:column;gap:7px}
+.opt{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:11px;padding:11px 13px;cursor:pointer;text-align:left;transition:all .22s;display:flex;align-items:center;gap:9px;font-family:'DM Sans',sans-serif;font-size:.83rem;color:rgba(255,255,255,.85)}
+.opt:hover:not(:disabled){background:rgba(255,255,255,.1);border-color:rgba(212,175,55,.4);transform:translateX(4px)}
+.opt.cor{background:rgba(74,222,128,.12);border-color:rgba(74,222,128,.5);color:#4ade80}
+.opt.wrg{background:rgba(244,63,94,.12);border-color:rgba(244,63,94,.5);color:#f43f5e}
+.opt-letter{width:24px;height:24px;border-radius:7px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:.67rem;font-weight:700;color:rgba(255,255,255,.4);flex-shrink:0}
+.feedback{margin-top:9px;padding:9px 12px;border-radius:9px;font-size:.76rem;font-weight:500;display:flex;align-items:center;gap:7px;animation:fadeup .3s ease}
+.feedback.cor{background:rgba(74,222,128,.09);border:1px solid rgba(74,222,128,.24);color:#4ade80}
+.feedback.wrg{background:rgba(244,63,94,.09);border:1px solid rgba(244,63,94,.24);color:#f87171}
+@keyframes fadeup{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.next-btn{margin-top:12px;width:100%;background:linear-gradient(135deg,var(--gold),var(--gold2));border:none;border-radius:11px;padding:12px;color:#001234;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .22s}
+.steps{display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:15px;flex-wrap:wrap}
+.step{display:flex;align-items:center;gap:4px;padding:4px 9px;border-radius:50px;font-size:.64rem;font-weight:600}
+.step.done{background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.28);color:#4ade80}
+.step.active{background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.32);color:var(--gold)}
+.step.pend{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:var(--muted)}
+.oral-subj{background:rgba(212,175,55,.05);border:1px solid rgba(212,175,55,.16);border-radius:13px;padding:14px;margin-bottom:13px}
+.oral-lbl{font-size:.61rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(212,175,55,.6);margin-bottom:5px}
+.oral-txt{font-family:'Cormorant Garamond',serif;color:#fff;font-size:.93rem;line-height:1.7;font-style:italic}
+.audio-btn{width:100%;background:rgba(212,175,55,.09);border:1px solid rgba(212,175,55,.26);border-radius:11px;padding:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-size:.83rem;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .22s;margin-bottom:11px}
+.your-turn{text-align:center;padding:9px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:9px;color:var(--text);font-size:.75rem;margin-bottom:11px}
+.rec-zone{background:rgba(244,63,94,.05);border:1px solid rgba(244,63,94,.16);border-radius:13px;padding:14px;margin-bottom:11px}
+.rec-lbl{color:rgba(255,255,255,.6);font-size:.67rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:9px}
+.rec-timer{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;color:#f43f5e;text-align:center;margin-bottom:9px;letter-spacing:2px}
+.rec-btns{display:flex;gap:7px}
+.rec-btn{flex:1;border:none;border-radius:9px;padding:10px;font-family:'DM Sans',sans-serif;font-size:.79rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;transition:all .22s}
+.rec-btn.start{background:linear-gradient(135deg,#f43f5e,#e11d48);color:#fff}
+.rec-btn.stop{background:rgba(244,63,94,.1);border:1px solid rgba(244,63,94,.26);color:#f43f5e}
+.rec-btn.play{background:rgba(74,222,128,.09);border:1px solid rgba(74,222,128,.26);color:#4ade80}
+.rec-btn.del{background:var(--card);border:1px solid var(--border);color:var(--muted)}
+.waves{display:flex;align-items:center;justify-content:center;gap:3px;height:28px;margin-bottom:9px}
+.wave-bar{width:4px;border-radius:2px;background:#f43f5e;animation:wav 1s ease-in-out infinite}
+@keyframes wav{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.9)}}
+.res-circle{width:68px;height:68px;border-radius:50%;background:linear-gradient(135deg,rgba(212,175,55,.18),rgba(212,175,55,.04));border:2px solid rgba(212,175,55,.38);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;animation:pulse 2s ease-in-out infinite;font-size:1.7rem}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(212,175,55,.28)}50%{box-shadow:0 0 0 14px rgba(212,175,55,0)}}
+.score-big{font-family:'Cormorant Garamond',serif;font-size:2.7rem;font-weight:700;color:var(--gold);line-height:1}
+.sbars{margin-bottom:13px;text-align:left}
+.sbar-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.sbar-lbl{font-size:.67rem;width:26px;text-align:right;font-weight:700}
+.sbar-track{flex:1;height:4px;background:rgba(255,255,255,.07);border-radius:10px;overflow:hidden}
+.sbar-fill{height:100%;border-radius:10px;transition:width 1s ease .3s}
+.blink-dot{width:7px;height:7px;border-radius:50%;background:#f97316;flex-shrink:0;margin-top:4px;animation:blink 1.5s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.cert-card{background:linear-gradient(145deg,#001a4d,#002878 50%,#001234);border:3px solid var(--gold);border-radius:20px;padding:22px 18px;position:relative;overflow:hidden;margin-bottom:13px}
+.cert-card::before{content:'';position:absolute;inset:6px;border:1px solid rgba(212,175,55,.18);border-radius:16px;pointer-events:none}
+.cert-corner{position:absolute;width:28px;height:28px;border-color:var(--gold);border-style:solid;border-width:0;opacity:.55}
+.cert-corner.tl{top:10px;left:10px;border-top-width:2px;border-left-width:2px}
+.cert-corner.tr{top:10px;right:10px;border-top-width:2px;border-right-width:2px}
+.cert-corner.bl{bottom:10px;left:10px;border-bottom-width:2px;border-left-width:2px}
+.cert-corner.br{bottom:10px;right:10px;border-bottom-width:2px;border-right-width:2px}
+.cert-card img{width:100%;height:85px;object-fit:cover;border-radius:9px;margin-bottom:9px;filter:brightness(.45) saturate(.6);display:block}
+.cert-logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--gold);letter-spacing:5px;text-align:center}
+.cert-logo-sub{color:rgba(212,175,55,.48);font-size:.54rem;letter-spacing:2px;text-transform:uppercase;text-align:center;margin-bottom:6px}
+.cert-hr{height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:7px 0}
+.cert-main-title{font-family:'Cormorant Garamond',serif;font-size:clamp(.8rem,2.3vw,1rem);font-weight:700;color:#fff;letter-spacing:1px;text-transform:uppercase;text-align:center;margin-bottom:2px}
+.cert-sub-title{color:var(--muted);font-size:.59rem;text-align:center;margin-bottom:9px}
+.cert-awarded{color:rgba(212,175,55,.58);font-size:.6rem;letter-spacing:2px;text-transform:uppercase;text-align:center;margin-bottom:3px}
+.cert-name{font-family:'Cormorant Garamond',serif;font-size:clamp(1.2rem,4vw,1.8rem);font-weight:700;color:var(--gold);text-align:center;line-height:1.2;margin-bottom:2px}
+.cert-city{color:var(--muted);font-size:.69rem;text-align:center;margin-bottom:10px}
+.cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:10px}
+.cert-item{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:8px;padding:8px 10px}
+.cert-item-lbl{color:rgba(212,175,55,.52);font-size:.56rem;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:2px}
+.cert-item-val{color:#fff;font-size:.79rem;font-weight:600}
+.cert-lvl{display:inline-flex;align-items:center;padding:2px 8px;border-radius:20px;font-size:.7rem;font-weight:700}
+.cert-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:9px;padding-top:9px;border-top:1px solid rgba(212,175,55,.16)}
+.cert-sig{text-align:center}
+.cert-sig-line{width:54px;height:1px;background:rgba(212,175,55,.32);margin:0 auto 3px}
+.cert-sig-name{color:var(--gold);font-size:.65rem;font-weight:700;font-family:'Cormorant Garamond',serif}
+.cert-sig-role{color:var(--muted);font-size:.54rem}
+.cert-seal{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;flex-direction:column;align-items:center;justify-content:center;animation:sealpulse 3s ease-in-out infinite}
+@keyframes sealpulse{0%,100%{box-shadow:0 0 0 4px rgba(212,175,55,.18)}50%{box-shadow:0 0 0 8px rgba(212,175,55,.08)}}
+.cert-seal-txt{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:.82rem;color:#001234;line-height:1}
+.cert-seal-sub{font-size:.36rem;color:#001234;opacity:.7;letter-spacing:1px;text-transform:uppercase}
+.session-item{background:var(--card);border:1px solid var(--border);border-radius:13px;padding:13px;margin-bottom:8px;transition:all .22s}
+.session-item:hover{border-color:rgba(212,175,55,.28)}
+.session-lang{color:#fff;font-weight:700;font-size:.87rem;margin-bottom:6px}
+.session-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:9px}
+.session-tag{display:flex;align-items:center;gap:4px;background:rgba(255,255,255,.05);border-radius:6px;padding:3px 7px;font-size:.67rem;color:var(--text)}
+.session-price-tag{background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.28);padding:3px 8px;border-radius:20px;font-size:.67rem;font-weight:700;color:var(--gold)}
+.session-places{padding:3px 7px;border-radius:20px;font-size:.65rem;font-weight:700}
+.session-places.ok{background:rgba(74,222,128,.09);color:#4ade80;border:1px solid rgba(74,222,128,.26)}
+.session-places.low{background:rgba(249,115,22,.09);color:#fb923c;border:1px solid rgba(249,115,22,.26)}
+.session-reserve{width:100%;background:linear-gradient(135deg,#25D366,#1aab52);border:none;border-radius:9px;padding:10px;color:#fff;font-family:'DM Sans',sans-serif;font-size:.77rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;transition:all .22s;text-decoration:none}
+.form-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:3px}
+.form-sub{color:var(--muted);font-size:.74rem;margin-bottom:16px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.fgroup{margin-bottom:10px}
+.flbl{color:rgba(255,255,255,.5);font-size:.69rem;font-weight:600;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;display:block}
+.finput{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:10px;padding:10px 13px;color:#fff;font-family:'DM Sans',sans-serif;font-size:.85rem;outline:none;transition:all .2s}
+.finput::placeholder{color:rgba(255,255,255,.2)}
+.finput:focus{border-color:rgba(212,175,55,.48);background:rgba(255,255,255,.08)}
+.hidden{display:none}
+.page-hidden{display:none!important}
+@keyframes slideIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.animate-in{animation:slideIn .38s ease forwards}
+.wa-ico{width:17px;height:17px;flex-shrink:0}
+.inscr-section{background:linear-gradient(135deg,rgba(212,175,55,.08),rgba(0,40,120,.4));border:1px solid rgba(212,175,55,.2);border-radius:20px;padding:22px;margin-bottom:20px}
+.inscr-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:#fff;margin-bottom:5px}
+.inscr-sub{color:rgba(255,255,255,.42);font-size:.77rem;margin-bottom:16px}
+.inscr-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+@media(max-width:480px){.inscr-grid{grid-template-columns:1fr}}
+.inscr-group{display:flex;flex-direction:column;gap:4px}
+.inscr-label{font-size:.7rem;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.inscr-input,.inscr-select{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:10px 13px;color:#fff;font-family:'DM Sans',sans-serif;font-size:.85rem;outline:none;transition:all .2s}
+.inscr-input:focus,.inscr-select:focus{border-color:rgba(212,175,55,.5);background:rgba(255,255,255,.09)}
+.inscr-input::placeholder{color:rgba(255,255,255,.2)}
+.inscr-select option{background:#001845;color:#fff}
+.inscr-success{background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.28);border-radius:11px;padding:14px;text-align:center;color:#4ade80;font-size:.85rem;display:none;margin-top:10px}
+.bo-login{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:28px;text-align:center;max-width:360px;margin:20px auto}
+.bo-wrap{padding:16px}
+.bo-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.08)}
+.bo-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:#fff}
+.bo-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:16px}
+.bo-stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:12px 8px;text-align:center}
+.bo-stat-val{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--gold)}
+.bo-stat-lbl{color:rgba(255,255,255,.4);font-size:.65rem;margin-top:2px}
+.bo-filters{display:flex;gap:7px;margin-bottom:12px;flex-wrap:wrap}
+.bo-filters input,.bo-filters select{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:9px;padding:7px 10px;color:#fff;font-family:'DM Sans',sans-serif;font-size:.75rem;outline:none;flex:1;min-width:120px}
+.bo-filters select option{background:#001845}
+.bo-tbl-wrap{border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;margin-bottom:12px}
+.bo-tbl{width:100%;border-collapse:collapse;font-size:.75rem;table-layout:fixed}
+.bo-tbl th{background:rgba(255,255,255,.07);color:rgba(255,255,255,.5);font-weight:600;padding:9px 10px;text-align:left;border-bottom:1px solid rgba(255,255,255,.08);font-size:.68rem;text-transform:uppercase;letter-spacing:.5px}
+.bo-tbl td{padding:9px 10px;border-bottom:1px solid rgba(255,255,255,.06);color:rgba(255,255,255,.8);vertical-align:middle;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bo-tbl tr:last-child td{border-bottom:none}
+.bo-tbl tr:hover td{background:rgba(255,255,255,.04)}
+.bo-pill{display:inline-block;font-size:.65rem;font-weight:600;padding:2px 8px;border-radius:20px}
+.bo-pill.new{background:rgba(56,189,248,.12);color:#38bdf8;border:1px solid rgba(56,189,248,.25)}
+.bo-pill.confirmed{background:rgba(74,222,128,.12);color:#4ade80;border:1px solid rgba(74,222,128,.25)}
+.bo-pill.pending{background:rgba(251,191,36,.12);color:#fbbf24;border:1px solid rgba(251,191,36,.25)}
+.bo-pill.cancelled{background:rgba(244,63,94,.12);color:#f43f5e;border:1px solid rgba(244,63,94,.25)}
+.bo-pill.test-prog{background:rgba(251,191,36,.12);color:#fbbf24;border:1px solid rgba(251,191,36,.25)}
+.bo-pill.test-done{background:rgba(139,92,246,.12);color:#a78bfa;border:1px solid rgba(139,92,246,.25)}
+.bo-av{width:26px;height:26px;border-radius:50%;background:rgba(212,175,55,.2);color:var(--gold);display:inline-flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;margin-right:5px;vertical-align:middle;flex-shrink:0}
+.bo-btn{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:7px;padding:3px 8px;font-size:.65rem;cursor:pointer;color:rgba(255,255,255,.6);font-family:'DM Sans',sans-serif;transition:all .2s}
+.bo-btn:hover{background:rgba(255,255,255,.12);color:#fff}
+.bo-btn.wa{border-color:rgba(37,211,102,.3);color:#4ade80}
+.bo-btn.del{border-color:rgba(244,63,94,.28);color:#f43f5e}
+.bo-empty{text-align:center;padding:28px;color:rgba(255,255,255,.3);font-size:.8rem}
+footer{position:relative;z-index:2;text-align:center;color:rgba(255,255,255,.18);font-size:.64rem;display:flex;flex-direction:column;align-items:center;gap:5px;padding:10px 20px 24px;line-height:1.8}
+footer a{color:var(--gold);text-decoration:none;font-weight:600}
+.copy-btn{background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.26);border-radius:5px;padding:2px 7px;color:var(--gold);font-size:.6rem;cursor:pointer}
+
+/* === FIXED WIDGETS === */
+@keyframes sp-slide-in{from{transform:translateX(-110%);opacity:0}to{transform:translateX(0);opacity:1}}
+@keyframes sp-slide-out{from{transform:translateX(0);opacity:1}to{transform:translateX(-110%);opacity:0}}
+@keyframes sp-prog{from{width:100%}to{width:0%}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes wa-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.13)}}
+#sp-notif{position:fixed;bottom:24px;left:16px;z-index:99999;max-width:300px;width:calc(100vw - 32px);transform:translateX(-110%);opacity:0;pointer-events:none;transition:none}
+#sp-notif.sp-visible{transform:translateX(0);opacity:1;pointer-events:auto;animation:sp-slide-in .5s cubic-bezier(.34,1.56,.64,1) forwards}
+#sp-notif.sp-hidden{animation:sp-slide-out .4s ease forwards;pointer-events:none}
+#wa-float{position:fixed;bottom:88px;right:16px;z-index:99998;width:52px;height:52px;border-radius:50%;background:#25D366;display:flex!important;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.42);text-decoration:none;animation:wa-pulse 1.5s ease-in-out 3}
+#exit-popup{position:fixed;inset:0;z-index:99999;background:rgba(0,10,30,.85);display:none;align-items:center;justify-content:center;padding:20px}
+.calc-box{background:linear-gradient(135deg,rgba(212,175,55,.08),rgba(0,40,120,.45));border:1.5px solid rgba(212,175,55,.35);border-radius:22px;padding:22px;margin-bottom:28px}
+.calc-select{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:11px;padding:11px 14px;color:#fff;font-family:'DM Sans',sans-serif;font-size:.85rem;outline:none;appearance:none;cursor:pointer;transition:border-color .2s}
+.calc-select:focus{border-color:rgba(212,175,55,.5)}
+.calc-select option{background:#001845}
+.calc-grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.calc-row2{display:flex;flex-direction:column;gap:5px;margin-bottom:14px}
+.calc-lbl{color:rgba(212,175,55,.8);font-size:.69rem;font-weight:700;letter-spacing:.8px;text-transform:uppercase}
+.calc-res{background:rgba(0,13,26,.6);border:1px solid rgba(212,175,55,.25);border-radius:14px;padding:14px;margin-bottom:12px;display:none}
+.calc-res.on{display:block;animation:fadeup .4s ease}
+.calc-res-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:.78rem}
+.calc-res-row:last-child{border:none}
+.calc-res-lbl{color:rgba(255,255,255,.48)}
+.calc-res-val{color:#fff;font-weight:700}
+.calc-res-val.g{color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:1rem}
+.calc-res-val.gr{color:#4ade80}
+.calc-tot{background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.38);border-radius:11px;padding:14px;text-align:center;margin-bottom:12px;display:none}
+.calc-tot.on{display:block;animation:fadeup .4s ease}
+.calc-tot-p{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--gold)}
+.calc-tot-s{color:rgba(255,255,255,.38);font-size:.67rem;margin-top:2px}
+.calc-info{border-radius:9px;padding:10px 12px;font-size:.75rem;line-height:1.6;margin-bottom:12px;display:none}
+.calc-info.on{display:block;animation:fadeup .3s ease}
+
+/* ===== PAYMENT ===== */
+.pay-box{background:linear-gradient(135deg,rgba(37,211,102,.08),rgba(0,40,120,.4));border:1.5px solid rgba(37,211,102,.3);border-radius:20px;padding:20px;margin-bottom:24px}
+.pay-title{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:700;color:#fff;margin-bottom:4px}
+.pay-sub{color:rgba(255,255,255,.42);font-size:.74rem;margin-bottom:16px}
+.pay-methods{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.pay-card{border-radius:13px;padding:14px;cursor:pointer;transition:all .22s;border:2px solid transparent;text-align:center}
+.pay-card.mtn{background:linear-gradient(135deg,rgba(255,204,0,.12),rgba(255,204,0,.04));border-color:rgba(255,204,0,.3)}
+.pay-card.orange{background:linear-gradient(135deg,rgba(255,102,0,.12),rgba(255,102,0,.04));border-color:rgba(255,102,0,.3)}
+.pay-card:hover{transform:translateY(-2px)}
+.pay-card.sel{border-width:2px;transform:translateY(-2px)}
+.pay-card.mtn.sel{border-color:#FFCC00;background:rgba(255,204,0,.15)}
+.pay-card.orange.sel{border-color:#FF6600;background:rgba(255,102,0,.15)}
+.pay-icon{font-size:1.8rem;margin-bottom:4px}
+.pay-name{font-weight:700;font-size:.82rem;color:#fff}
+.pay-num{font-size:.68rem;color:rgba(255,255,255,.5);margin-top:2px}
+.pay-amount-row{background:rgba(0,13,26,.5);border:1px solid rgba(255,255,255,.1);border-radius:11px;padding:12px 14px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center}
+.pay-amount-lbl{color:rgba(255,255,255,.5);font-size:.74rem}
+.pay-amount-val{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--gold);font-weight:700}
+.pay-step{background:rgba(255,255,255,.04);border-radius:9px;padding:10px 12px;margin-bottom:10px;font-size:.75rem;color:rgba(255,255,255,.6);line-height:1.7}
+.pay-step b{color:var(--gold)}
+
+/* ===== ESPACE ETUDIANT ===== */
+.etu-login{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:22px;margin-bottom:20px}
+.etu-dash{display:none}
+.etu-welcome{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:4px}
+.etu-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:14px;margin-bottom:10px}
+.etu-card-title{font-size:.68rem;font-weight:700;color:rgba(212,175,55,.7);letter-spacing:1.2px;text-transform:uppercase;margin-bottom:8px}
+.etu-prog-bar{height:6px;background:rgba(255,255,255,.08);border-radius:10px;overflow:hidden;margin-bottom:4px}
+.etu-prog-fill{height:100%;border-radius:10px;background:linear-gradient(90deg,var(--gold),#f5d76e);transition:width 1s ease}
+.etu-badge{display:inline-flex;align-items:center;padding:4px 12px;border-radius:20px;font-size:.72rem;font-weight:700;margin:3px}
+
+/* ===== DASHBOARD GRAPHIQUES ===== */
+.dash-chart-wrap{background:rgba(0,13,26,.6);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:14px;margin-bottom:14px}
+.dash-chart-title{font-size:.7rem;font-weight:700;color:rgba(212,175,55,.7);letter-spacing:1.2px;text-transform:uppercase;margin-bottom:10px}
+.bar-chart{display:flex;align-items:flex-end;gap:6px;height:80px}
+.bar{flex:1;border-radius:4px 4px 0 0;background:linear-gradient(to top,var(--gold),rgba(212,175,55,.4));min-width:0;transition:height .6s ease;position:relative;cursor:pointer}
+.bar:hover::after{content:attr(data-val);position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-size:.6rem;color:var(--gold);white-space:nowrap}
+.bar-lbl{font-size:.55rem;color:rgba(255,255,255,.35);text-align:center;margin-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pie-wrap{display:flex;gap:10px;align-items:center}
+.pie-legend{display:flex;flex-direction:column;gap:5px;flex:1}
+.pie-item{display:flex;align-items:center;gap:6px;font-size:.7rem;color:rgba(255,255,255,.7)}
+.pie-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+
+/* ===== BLOG ===== */
+.blog-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:12px;transition:all .22s;cursor:pointer}
+.blog-card:hover{border-color:rgba(212,175,55,.3);transform:translateY(-2px)}
+.blog-card img{width:100%;height:100px;object-fit:cover;filter:brightness(.6) saturate(.8);display:block}
+.blog-body{padding:12px}
+.blog-tag{display:inline-block;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.25);border-radius:20px;padding:2px 9px;font-size:.6rem;font-weight:700;color:var(--gold);margin-bottom:6px;letter-spacing:.5px}
+.blog-title{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:700;color:#fff;margin-bottom:4px;line-height:1.3}
+.blog-meta{color:rgba(255,255,255,.35);font-size:.67rem}
+.blog-article{display:none}
+.blog-article.open{display:block;animation:slideIn .3s ease}
+.blog-article-body{color:rgba(255,255,255,.72);font-size:.82rem;line-height:1.8}
+.blog-article-body h3{font-family:'Cormorant Garamond',serif;color:var(--gold);font-size:1.1rem;margin:14px 0 6px}
+
+/* ===== TEMOIGNAGES VIDEO ===== */
+.vid-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:10px}
+.vid-thumb{position:relative;cursor:pointer}
+.vid-thumb img{width:100%;height:110px;object-fit:cover;filter:brightness(.55);display:block}
+.vid-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.vid-play-btn{width:44px;height:44px;border-radius:50%;background:rgba(212,175,55,.9);display:flex;align-items:center;justify-content:center}
+.vid-info{padding:10px 12px}
+.vid-name{font-weight:700;font-size:.83rem;color:#fff}
+.vid-meta{color:var(--muted);font-size:.67rem}
+
+/* ===== ENTREPRISES ===== */
+.b2b-card{background:linear-gradient(135deg,rgba(56,189,248,.08),rgba(0,40,120,.4));border:1px solid rgba(56,189,248,.2);border-radius:18px;padding:20px;margin-bottom:20px}
+.b2b-badge{display:inline-block;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.28);border-radius:20px;padding:3px 11px;font-size:.65rem;font-weight:700;color:#38bdf8;margin-bottom:10px;letter-spacing:.5px}
+
+/* ===== AFFILIATION ===== */
+.aff-card{background:linear-gradient(135deg,rgba(139,92,246,.1),rgba(0,40,120,.4));border:1px solid rgba(139,92,246,.25);border-radius:18px;padding:20px;margin-bottom:20px}
+.aff-code{font-family:monospace;font-size:1.4rem;font-weight:700;color:var(--gold);letter-spacing:4px;text-align:center;background:rgba(0,13,26,.5);border:1px solid rgba(212,175,55,.3);border-radius:9px;padding:10px;margin:10px 0}
+
+/* ===== CHECKLIST VISA ===== */
+.visa-tab{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.visa-tab-btn{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:5px 12px;font-size:.72rem;font-weight:600;color:rgba(255,255,255,.6);cursor:pointer;transition:all .2s}
+.visa-tab-btn.act{background:rgba(212,175,55,.15);border-color:rgba(212,175,55,.4);color:var(--gold)}
+.visa-item{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.visa-item:last-child{border:none}
+.visa-check{width:22px;height:22px;border-radius:6px;border:2px solid rgba(255,255,255,.2);background:transparent;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .2s;margin-top:1px}
+.visa-check.done{background:var(--gold);border-color:var(--gold)}
+.visa-check.done::after{content:'✓';color:#001234;font-size:.75rem;font-weight:700}
+.visa-text{color:rgba(255,255,255,.7);font-size:.78rem;line-height:1.5;flex:1}
+.visa-prog{height:5px;background:rgba(255,255,255,.08);border-radius:10px;overflow:hidden;margin-bottom:12px}
+.visa-prog-fill{height:100%;background:linear-gradient(90deg,var(--gold),#4ade80);border-radius:10px;transition:width .4s}
+
+/* ===== PARTAGE CERTIFICAT ===== */
+.share-btns{display:flex;gap:8px;flex-wrap:wrap}
+.share-btn{flex:1;min-width:120px;border:none;border-radius:10px;padding:10px;font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;transition:all .22s}
+.share-wa{background:linear-gradient(135deg,#25D366,#1aab52);color:#fff}
+.share-fb{background:linear-gradient(135deg,#1877F2,#0a5bcc);color:#fff}
+.share-dl{background:var(--card);border:1px solid var(--border);color:var(--text)}
+
+</style>
+</head>
+<body>
+<div class="app" id="app">
+<div class="bg-grid"></div>
+<div class="orb o1"></div>
+<div class="orb o2"></div>
+
+<div class="urgency" style="background:linear-gradient(90deg,#0a0020,#001533,#0a0020);background-size:200%;animation:urg 4s linear infinite;padding:0;border-bottom:2px solid var(--gold)">
+  <div style="display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;padding:8px 14px">
+    <span style="font-size:.7rem;font-weight:700;color:var(--gold);letter-spacing:.05em;white-space:nowrap">🔥 SESSION 29 MARS — DERNIÈRES PLACES</span>
+    <div style="display:flex;gap:4px;align-items:flex-end">
+      <div style="text-align:center"><div id="cd-j" style="background:var(--gold);color:#001234;font-family:monospace;font-size:.95rem;font-weight:700;min-width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:4px">00</div><div style="color:rgba(255,255,255,.4);font-size:.5rem;margin-top:1px;text-align:center">J</div></div>
+      <div style="color:var(--gold);font-weight:700;padding-bottom:8px">:</div>
+      <div style="text-align:center"><div id="cd-h" style="background:var(--gold);color:#001234;font-family:monospace;font-size:.95rem;font-weight:700;min-width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:4px">00</div><div style="color:rgba(255,255,255,.4);font-size:.5rem;margin-top:1px;text-align:center">H</div></div>
+      <div style="color:var(--gold);font-weight:700;padding-bottom:8px">:</div>
+      <div style="text-align:center"><div id="cd-m" style="background:var(--gold);color:#001234;font-family:monospace;font-size:.95rem;font-weight:700;min-width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:4px">00</div><div style="color:rgba(255,255,255,.4);font-size:.5rem;margin-top:1px;text-align:center">M</div></div>
+      <div style="color:var(--gold);font-weight:700;padding-bottom:8px">:</div>
+      <div style="text-align:center"><div id="cd-s" style="background:#dc2626;color:#fff;font-family:monospace;font-size:.95rem;font-weight:700;min-width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:4px">00</div><div style="color:rgba(255,255,255,.4);font-size:.5rem;margin-top:1px;text-align:center">S</div></div>
+    </div>
+    <a href="https://wa.me/237674373396?text=Bonjour%20TFG%20!%20Je%20veux%20réserver%20ma%20place%20pour%20le%2029%20Mars." target="_blank" style="background:var(--gold);color:#001234;padding:5px 11px;border-radius:5px;font-weight:700;font-size:.7rem;text-decoration:none;white-space:nowrap">Réserver →</a>
+  </div>
+</div>
+
+<nav style="width:100%">
+  <a class="nav-brand" href="#" onclick="showPage('landing');return false">
+    <img src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?w=80&q=80" alt="TFG" class="nav-logo"/>
+    <div><div class="nav-name">TFG</div><div class="nav-sub">Institute Language</div></div>
+  </a>
+  <div class="nav-links">
+    <button class="nb" onclick="showPage('sessions')">📅 Sessions</button>
+    <button class="nb" onclick="showPage('etudiant')" style="background:rgba(212,175,55,.12);border-color:rgba(212,175,55,.25);color:var(--gold)">🎓 Mon Espace</button>
+    <button class="nb" onclick="showPage('contact')">Contact</button>
+    <button class="nb" onclick="showPage('backoffice')" style="background:rgba(212,175,55,.15);border-color:rgba(212,175,55,.3);color:var(--gold)">🔐 Admin</button>
+    <button class="nb gold" onclick="showPage('home')">Test gratuit →</button>
+  </div>
+</nav>
+
+<!-- LANDING -->
+<div id="page-landing" class="page animate-in">
+  <div class="hero">
+    <div class="hero-bg"><img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=1200&q=80" alt=""/></div>
+    <div class="hero-ov"></div>
+    <div class="hero-content">
+      <div class="hero-tag">🌍 Yaoundé, Cameroun · Depuis 2014</div>
+      <h1 class="hero-title">Votre passeport<br/>vers le <em>monde</em></h1>
+      <p class="hero-sub">TFG INTERNATIONALE INSTITUTE LANGUAGE — Centre certifié à Yaoundé. Certifications, Immigration, Formation Pro.</p>
+      <div class="hero-btns">
+        <a href="#" class="btn-gold" onclick="showPage('home');return false">🎯 Test de niveau gratuit</a>
+        <a href="#" class="btn-clear" onclick="showPage('sessions');return false">📅 Sessions</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-val">500+</div><div class="stat-lbl">🎓 Étudiants certifiés</div></div>
+    <div class="stat"><div class="stat-val">7</div><div class="stat-lbl">🌍 Langues enseignées</div></div>
+    <div class="stat"><div class="stat-val">95%</div><div class="stat-lbl">⭐ Taux de réussite</div></div>
+    <div class="stat"><div class="stat-val">10+</div><div class="stat-lbl">🏆 Années d'expérience</div></div>
+  </div>
+
+  <div style="display:flex;justify-content:center;margin-bottom:16px">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(0,24,69,.85);border:1px solid rgba(212,175,55,.3);border-radius:20px;padding:5px 14px;font-size:.74rem;color:#fff">
+      <span style="width:7px;height:7px;border-radius:50%;background:#4ade80;display:inline-block;flex-shrink:0;animation:blink 2s infinite"></span>
+      <span><strong id="live-counter-num" style="color:var(--gold)">7</strong> personnes consultent cette page</span>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sdiv"><div class="sl"></div><span class="st">Nos services</span><div class="sl"></div></div>
+    <div class="sec-title">Ce que nous proposons</div>
+    <p class="sec-sub">Des formations adaptées à chaque objectif</p>
+  </div>
+  <div class="svc-grid">
+    <div class="svc">
+      <img src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?w=400&q=80" alt=""/>
+      <div class="svc-body"><div class="svc-icon">🎓</div><div class="svc-name">Préparation aux Certifications</div><div class="svc-desc">TCF · DELF · DALF · IELTS · Goethe · DELE · HSK · TRKI</div><div class="svc-detail">Simulations d'examens, corrections détaillées et suivi personnalisé de A1 à C2.</div></div>
+    </div>
+    <div class="svc">
+      <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=400&q=80" alt=""/>
+      <div class="svc-body"><div class="svc-icon">🌍</div><div class="svc-name">Immigration & Études à l'Étranger</div><div class="svc-desc">🇨🇦 Canada · 🇫🇷 France · 🇩🇪 Allemagne · 🇪🇸 Espagne · 🇮🇹 Italie · 🇷🇺 Russie · 🇨🇳 Chine</div><div class="svc-detail">Accompagnement complet : préparation linguistique, conseils visa, dossier universitaire.</div></div>
+    </div>
+    <div class="svc">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80" alt=""/>
+      <div class="svc-body"><div class="svc-icon">💼</div><div class="svc-name">Formation Professionnelle</div><div class="svc-desc">Langues pour entreprises, équipes et professionnels</div><div class="svc-detail">Formations sur-mesure pour entreprises et professionnels souhaitant évoluer à l'international.</div></div>
+    </div>
+    <div class="svc">
+      <img src="https://images.unsplash.com/photo-1560785496-3c9d27877182?w=400&q=80" alt=""/>
+      <div class="svc-body"><div class="svc-icon">📱</div><div class="svc-name">Cours en Ligne & Présentiel</div><div class="svc-desc">Flexibilité totale selon votre emploi du temps</div><div class="svc-detail">Cours hybrides 7j/7 via Zoom ou WhatsApp, selon votre agenda.</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sdiv"><div class="sl"></div><span class="st">Nos supports</span><div class="sl"></div></div>
+    <div class="sec-title">Pack Pédagogique Complet</div>
+    <p class="sec-sub">Tout ce qu'il vous faut pour progresser rapidement</p>
+  </div>
+  <div class="pack">
+    <div class="pack-badge">Promo 🔥</div>
+    <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80" alt=""/>
+    <div class="pack-name">📦 Pack Fascicules TFG</div>
+    <div class="pack-price">15 000 FCFA <span style="font-size:.85rem;color:var(--muted);font-family:'DM Sans',sans-serif;font-weight:400">seulement</span></div>
+    <div class="pack-list">
+      <div class="pack-item">✅ Fascicules complets de cours (toutes langues)</div>
+      <div class="pack-item">✅ Fichiers Audio MP3 (écoute & prononciation)</div>
+      <div class="pack-item">✅ Vidéos pédagogiques HD</div>
+      <div class="pack-item">✅ Fiches de vocabulaire & grammaire</div>
+      <div class="pack-item">✅ Plus de 1 000 exercices audio & vidéo</div>
+      <div class="pack-item">✅ Accès mobile illimité</div>
+    </div>
+    <a href="https://wa.me/237674373396?text=Bonjour%20TFG%20!%20Je%20veux%20commander%20le%20Pack%20Fascicules%20à%2015000%20FCFA." target="_blank" class="cta-wa"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Commander — 15 000 FCFA</a>
+  </div>
+
+  <div class="sec">
+    <div class="sdiv"><div class="sl"></div><span class="st">Programmes</span><div class="sl"></div></div>
+    <div class="sec-title">Nos formations & Tarifs</div>
+    <p class="sec-sub">Prix par niveau · Faites défiler pour voir toutes les langues</p>
+  </div>
+  <div class="slider-outer">
+    <div class="slider-track" id="slider-track">
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80" alt="Français"/>
+        <div class="slide-flag">🇫🇷</div>
+        <div class="slide-title">Français — TCF / DELF / DALF</div>
+        <div class="slide-sub">Canada · France · Belgique · Suisse</div>
+        <div class="slide-pays"><div class="slide-pays-lbl">🌍 Pays visés</div><div class="slide-pays-val">🇨🇦 Canada · 🇫🇷 France · 🇧🇪 Belgique · 🇨🇭 Suisse</div></div>
+        <div class="slide-rows">
+          <div class="slide-row">📖 TCF · DELF A1→B2 · DALF C1→C2</div>
+          <div class="slide-row">🎓 6 niveaux : A1 · A2 · B1 · B2 · C1 · C2</div>
+          <div class="slide-row">⏱ 1 niveau = 6 semaines de cours</div>
+          <div class="slide-row slide-price">⚡ 25 000 FCFA / niveau</div>
+        </div>
+        <a href="https://wa.me/237674373396?text=Bonjour%20TFG%20!%20Je%20veux%20m'inscrire%20en%20Français." target="_blank" class="cta-wa" style="max-width:300px"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Réserver ma place</a>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=600&q=80" alt="Anglais"/>
+        <div class="slide-flag">🇬🇧</div>
+        <div class="slide-title">Anglais — IELTS / TOEFL</div>
+        <div class="slide-sub">Royaume-Uni · USA · Canada · Australie</div>
+        <div class="slide-pays"><div class="slide-pays-lbl">🌍 Pays visés</div><div class="slide-pays-val">🇬🇧 Royaume-Uni · 🇺🇸 USA · 🇨🇦 Canada · 🇦🇺 Australie</div></div>
+        <div class="slide-rows">
+          <div class="slide-row">📖 IELTS · TOEFL · Cambridge B2/C1</div>
+          <div class="slide-row">🎓 6 niveaux : A1 · A2 · B1 · B2 · C1 · C2</div>
+          <div class="slide-row">⏱ 1 niveau = 6 semaines de cours</div>
+          <div class="slide-row slide-price">⚡ 30 000 FCFA / niveau</div>
+        </div>
+        <a href="https://wa.me/237674373396?text=Bonjour%20TFG%20!%20Je%20veux%20m'inscrire%20en%20Anglais." target="_blank" class="cta-wa" style="max-width:300px"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Réserver ma place</a>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=80" alt="Allemand"/>
+        <div class="slide-flag">🇩🇪</div>
+        <div class="slide-title">Allemand — Goethe-Zertifikat</div>
+        <div class="slide-sub">Allemagne · Autriche · Suisse</div>
+        <div class="slide-pays"><div class="slide-pays-lbl">🌍 Pays visés</div><div class="slide-pays-val">🇩🇪 Allemagne · 🇦🇹 Autriche · 🇨🇭 Suisse</div></div>
+        <div class="slide-rows">
+          <div class="slide-row">📖 Goethe-Zertifikat A1 → C2</div>
+          <div class="slide-row">🎓 6 niveaux : A1 · A2 · B1 · B2 · C1 · C2</div>
+          <div class="slide-row">⏱ 1 niveau = 12 semaines de cours</div>
+          <div class="slide-row slide-price">⚡ 85 000 FCFA / niveau</div>
+        </div>
+        <a href="https://wa.me/237674373396?text=Bonjour%20TFG%20!%20Je%20veux%20m'inscrire%20en%20Allemand." target="_blank" class="cta-wa" style="max-width:300px"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Réserver ma place</a>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Espagnol"/>
+        <div class="slide-flag">🇪🇸</div>
+        <div class="slide-title">Espagnol — DELE</div>
+        <div class="slide-sub">Espagne · Mexique · Amérique latine</div>
+        <div class="slide-pays"><div class="slide-pays-lbl">🌍 Pays visés</div><div class="slide-pays-val">🇪🇸 Espagne · 🇲🇽 Mexique · 🌎 Amérique latine</div></div>
+        <div class="slide-rows">
+          <div class="slide-row">📖 DELE A1 → C2</div>
+          <div class="slide-row">🎓 6 niveaux : A1 · A2 · B1 · B2 · C1 · C2</div>
+          <div class="slide-row">⏱ 1 niveau = 6 semaines de cours</div>
+          <div class="slide-row slide-price">⚡ 65 000 FCFA / niveau</div>
+        </div>
+        <a href="https://wa.me/237674373396?text=Bonjour%20TFG%20!%20Je%20veux%20m'inscrire%20en%20Espagnol." target="_blank" class="cta-wa" style="max-width:300px"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Réserver ma place</a>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1515542622106-078bda21f56b?w=600&q=80" alt="Italien"/>
+        <div class="slide-flag">🇮🇹</div>
+        <div class="slide-title">Italien — CILS / CELI</div>
+        <div class="slide-sub">Études & Travail · Italie</div>
+        <div class="slide-pays"><div class="slide-pays-lbl">🌍 Pays visés</div><div class="slide-pays-val">🇮🇹 Italie</div></div>
+        <div class="slide-rows">
+          <div class="slide-row">📖 CILS · CELI A1 → C2</div>
+          <div class="slide-row">🎓 6 niveaux : A1 · A2 · B1 · B2 · C1 · C2</div>
+          <div class="slide-row">⏱ 1 niveau = 6 semaines de cours</div>
+          <div class="slide-row slide-price">⚡ 70 000 FCFA / niveau</div>
+        </div>
+        <a href="https://wa.me/237674373396?text=Bonjour%20TFG%20!%20Je%20veux%20m'inscrire%20en%20Italien." target="_blank" class="cta-wa" style="max-width:300px"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Réserver ma place</a>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1513326738677-b964603b136d?w=600&q=80" alt="Russe"/>
+        <div class="slide-flag">🇷🇺</div>
+        <div class="slide-title">Russe — TORFL / TRKI</div>
+        <div class="slide-sub">Études & Bourses · Russie</div>
+        <div class="slide-pays"><div class="slide-pays-lbl">🌍 Pays visés</div><div class="slide-pays-val">🇷🇺 Russie</div></div>
+        <div class="slide-rows">
+          <div class="slide-row">📖 TORFL · TRKI Niveaux 1→4</div>
+          <div class="slide-row">🎓 6 niveaux : A1 · A2 · B1 · B2 · C1 · C2</div>
+          <div class="slide-row">⏱ 1 niveau = 3 mois de cours</div>
+          <div class="slide-row slide-price">⚡ 120 000 FCFA / niveau</div>
+        </div>
+        <a href="https://wa.me/237674373396?text=Bonjour%20TFG%20!%20Je%20veux%20m'inscrire%20en%20Russe." target="_blank" class="cta-wa" style="max-width:300px"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Réserver ma place</a>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&q=80" alt="Chinois"/>
+        <div class="slide-flag">🇨🇳</div>
+        <div class="slide-title">Chinois — HSK</div>
+        <div class="slide-sub">Études & Business · Chine</div>
+        <div class="slide-pays"><div class="slide-pays-lbl">🌍 Pays visés</div><div class="slide-pays-val">🇨🇳 Chine</div></div>
+        <div class="slide-rows">
+          <div class="slide-row">📖 HSK 1 · HSK 2 · HSK 3 · HSK 4</div>
+          <div class="slide-row">🎓 4 niveaux : HSK1 → HSK4</div>
+          <div class="slide-row">⏱ 1 niveau = 2,5 mois de cours</div>
+          <div class="slide-row slide-price">⚡ 120 000 FCFA / niveau</div>
+        </div>
+        <a href="https://wa.me/237674373396?text=Bonjour%20TFG%20!%20Je%20veux%20m'inscrire%20en%20Chinois." target="_blank" class="cta-wa" style="max-width:300px"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Réserver ma place</a>
+      </div>
+    </div>
+  </div>
+  <div class="slider-nav">
+    <button class="snav-btn" onclick="moveSlide(-1)">&#8249;</button>
+    <div class="sdots" id="sdots">
+      <div class="sdot on" onclick="goSlide(0)"></div><div class="sdot" onclick="goSlide(1)"></div>
+      <div class="sdot" onclick="goSlide(2)"></div><div class="sdot" onclick="goSlide(3)"></div>
+      <div class="sdot" onclick="goSlide(4)"></div><div class="sdot" onclick="goSlide(5)"></div>
+      <div class="sdot" onclick="goSlide(6)"></div>
+    </div>
+    <button class="snav-btn" onclick="moveSlide(1)">&#8250;</button>
+  </div>
+
+  <div class="sec">
+    <div class="sdiv"><div class="sl"></div><span class="st">Test gratuit</span><div class="sl"></div></div>
+    <div class="sec-title">7 langues disponibles</div>
+    <p class="sec-sub">Cliquez sur une langue pour passer le test de niveau gratuit</p>
+  </div>
+  <div class="lang-grid">
+    <div class="lang-btn" onclick="startTest('fr')"><span class="lang-flag">🇫🇷</span><span class="lang-name">Français TCF/DELF</span><span class="lang-lvl">A1 → C2</span></div>
+    <div class="lang-btn" onclick="startTest('en')"><span class="lang-flag">🇬🇧</span><span class="lang-name">English Program</span><span class="lang-lvl">A1 → C2</span></div>
+    <div class="lang-btn" onclick="startTest('de')"><span class="lang-flag">🇩🇪</span><span class="lang-name">Deutsch Kurs</span><span class="lang-lvl">A1 → C2</span></div>
+    <div class="lang-btn" onclick="startTest('es')"><span class="lang-flag">🇪🇸</span><span class="lang-name">Español</span><span class="lang-lvl">A1 → C2</span></div>
+    <div class="lang-btn" onclick="startTest('it')"><span class="lang-flag">🇮🇹</span><span class="lang-name">Lingua Italiana</span><span class="lang-lvl">A1 → C2</span></div>
+    <div class="lang-btn" onclick="startTest('ru')"><span class="lang-flag">🇷🇺</span><span class="lang-name">Русский язык</span><span class="lang-lvl">A1 → C2</span></div>
+    <div class="lang-btn" onclick="startTest('zh')"><span class="lang-flag">🇨🇳</span><span class="lang-name">中文课程</span><span class="lang-lvl">A1 → C2</span></div>
+  </div>
+
+  <div class="sec">
+    <div class="sdiv"><div class="sl"></div><span class="st">Niveaux CECRL</span><div class="sl"></div></div>
+    <div class="sec-title">De A1 à C2</div>
+  </div>
+  <div class="levels">
+    <span class="lvl-pill" style="background:#4ade8018;border:1px solid #4ade8040;color:#4ade80"><b>A1</b> · Grand débutant</span>
+    <span class="lvl-pill" style="background:#86efac18;border:1px solid #86efac40;color:#86efac"><b>A2</b> · Débutant</span>
+    <span class="lvl-pill" style="background:#fbbf2418;border:1px solid #fbbf2440;color:#fbbf24"><b>B1</b> · Intermédiaire</span>
+    <span class="lvl-pill" style="background:#f9731618;border:1px solid #f9731640;color:#f97316"><b>B2</b> · Avancé</span>
+    <span class="lvl-pill" style="background:#f43f5e18;border:1px solid #f43f5e40;color:#f43f5e"><b>C1</b> · Autonome</span>
+    <span class="lvl-pill" style="background:#e879f918;border:1px solid #e879f940;color:#e879f9"><b>C2</b> · Maîtrise</span>
+  </div>
+
+  <div class="photo-grid">
+    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&q=80" alt=""/>
+    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=80" alt=""/>
+  </div>
+
+  <div class="sec">
+    <div class="sdiv"><div class="sl"></div><span class="st">Témoignages</span><div class="sl"></div></div>
+    <div class="sec-title">Ils ont réussi avec TFG</div>
+  </div>
+  <div class="testi-list">
+    <div class="testi"><div class="testi-top"><div class="testi-av">A</div><div><div class="testi-name">Aminata K.</div><div class="testi-meta">🇫🇷 TCF · Yaoundé</div></div><div class="testi-score">B2</div></div><div class="testi-stars">★★★★★</div><div class="testi-text">"Grâce à TFG, j'ai obtenu mon visa Canada en 3 mois. Les formateurs sont exceptionnels !"</div></div>
+    <div class="testi"><div class="testi-top"><div class="testi-av">E</div><div><div class="testi-name">Eboa M.</div><div class="testi-meta">🇩🇪 Goethe · Douala</div></div><div class="testi-score">B1</div></div><div class="testi-stars">★★★★★</div><div class="testi-text">"J'ai décroché une bourse d'études en Allemagne. TFG a transformé mon avenir !"</div></div>
+    <div class="testi"><div class="testi-top"><div class="testi-av">N</div><div><div class="testi-name">Ngo Sophie</div><div class="testi-meta">🇬🇧 IELTS · Bafoussam</div></div><div class="testi-score">C1</div></div><div class="testi-stars">★★★★★</div><div class="testi-text">"Recrutée par une multinationale grâce à mon niveau d'anglais certifié par TFG."</div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sdiv"><div class="sl"></div><span class="st">Simulateur</span><div class="sl"></div></div>
+    <div class="sec-title">Combien ca coute ? Combien de temps ?</div>
+    <p class="sec-sub">Simulez votre parcours en 3 clics — resultat immediat</p>
+  </div>
+  <div class="calc-box">
+    <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:4px">Calculateur de Parcours TFG</div>
+    <p style="color:rgba(255,255,255,.42);font-size:.75rem;margin-bottom:16px">Choisissez votre langue, niveau actuel et objectif.</p>
+    <div class="calc-grid2">
+      <div class="calc-row2"><label class="calc-lbl">Langue</label>
+        <select class="calc-select" id="cl-lang" onchange="calcUp()">
+          <option value="">Choisir...</option>
+          <option value="fr">Francais TCF/DELF</option>
+          <option value="en">Anglais IELTS/TOEFL</option>
+          <option value="de">Allemand Goethe</option>
+          <option value="es">Espagnol DELE</option>
+          <option value="it">Italien CILS</option>
+          <option value="ru">Russe TORFL</option>
+          <option value="zh">Chinois HSK</option>
+        </select>
+      </div>
+      <div class="calc-row2"><label class="calc-lbl">Niveau actuel</label>
+        <select class="calc-select" id="cl-from" onchange="calcUp()">
+          <option value="">Choisir...</option>
+          <option value="0">A1 - Grand debutant</option>
+          <option value="1">A2 - Debutant</option>
+          <option value="2">B1 - Intermediaire</option>
+          <option value="3">B2 - Avance</option>
+          <option value="4">C1 - Autonome</option>
+        </select>
+      </div>
+    </div>
+    <div class="calc-row2" style="margin-bottom:16px"><label class="calc-lbl">Objectif</label>
+      <select class="calc-select" id="cl-to" onchange="calcUp()">
+        <option value="">Choisir...</option>
+        <option value="1">A2 - Debutant</option>
+        <option value="2">B1 - Intermediaire</option>
+        <option value="3">B2 - Avance (Visa Canada/France)</option>
+        <option value="4">C1 - Autonome (Etudes superieures)</option>
+        <option value="5">C2 - Maitrise (Niveau expert)</option>
+      </select>
+    </div>
+    <div class="calc-res" id="cl-res">
+      <div class="calc-res-row"><span class="calc-res-lbl">Nombre de niveaux</span><span class="calc-res-val" id="cl-niv">-</span></div>
+      <div class="calc-res-row"><span class="calc-res-lbl">Duree estimee</span><span class="calc-res-val gr" id="cl-dur">-</span></div>
+      <div class="calc-res-row"><span class="calc-res-lbl">Prix par niveau</span><span class="calc-res-val g" id="cl-pniv">-</span></div>
+      <div class="calc-res-row"><span class="calc-res-lbl">Certification visee</span><span class="calc-res-val" id="cl-cert">-</span></div>
+      <div class="calc-res-row"><span class="calc-res-lbl">Pays accessibles</span><span class="calc-res-val" id="cl-pays" style="font-size:.72rem;text-align:right">-</span></div>
+    </div>
+    <div class="calc-tot" id="cl-tot">
+      <div style="color:rgba(212,175,55,.7);font-size:.65rem;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:3px">Investissement total</div>
+      <div class="calc-tot-p" id="cl-price">-</div>
+      <div class="calc-tot-s" id="cl-psub">hors frais inscription</div>
+    </div>
+    <div class="calc-info" id="cl-info"></div>
+    <a id="cl-wa" href="#" target="_blank" class="cta-wa" style="display:none">
+      <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Je m inscris - Demarrer mon parcours
+    </a>
+  </div>
+
+  <div class="sec">
+    <div class="sdiv"><div class="sl"></div><span class="st">Paiement</span><div class="sl"></div></div>
+    <div class="sec-title">Payer en 2 clics</div>
+    <p class="sec-sub">MTN MoMo ou Orange Money — instantane et securise</p>
+  </div>
+  <div class="pay-box">
+    <div class="pay-title">Paiement Mobile Money</div>
+    <p class="pay-sub">Choisissez votre operateur et suivez les etapes</p>
+    <div class="pay-methods">
+      <div class="pay-card mtn" id="pay-mtn" onclick="selectPay('mtn')">
+        <div class="pay-icon">🟡</div>
+        <div class="pay-name">MTN MoMo</div>
+        <div class="pay-num">674 373 396</div>
+      </div>
+      <div class="pay-card orange" id="pay-orange" onclick="selectPay('orange')">
+        <div class="pay-icon">🟠</div>
+        <div class="pay-name">Orange Money</div>
+        <div class="pay-num">693 510 122</div>
+      </div>
+    </div>
+    <div class="pay-amount-row">
+      <span class="pay-amount-lbl">Frais d inscription</span>
+      <span class="pay-amount-val">10 000 FCFA</span>
+    </div>
+    <div id="pay-steps" style="display:none">
+      <div class="pay-step" id="pay-mtn-steps">
+        <b>MTN MoMo — Comment payer :</b><br>
+        1. Composez <b>*126#</b> sur votre telephone<br>
+        2. Choisissez <b>Transfert d argent</b><br>
+        3. Entrez le numero : <b>674 373 396</b><br>
+        4. Montant : <b>10 000 FCFA</b><br>
+        5. Nom : <b>TFG International Institute</b><br>
+        6. Confirmez avec votre code PIN<br>
+        7. Envoyez le recu par WhatsApp
+      </div>
+      <div class="pay-step" id="pay-orange-steps" style="display:none">
+        <b>Orange Money — Comment payer :</b><br>
+        1. Composez <b>#150#</b> sur votre telephone<br>
+        2. Choisissez <b>Paiement</b><br>
+        3. Entrez le numero : <b>693 510 122</b><br>
+        4. Montant : <b>10 000 FCFA</b><br>
+        5. Nom : <b>TFG International Institute</b><br>
+        6. Confirmez avec votre code PIN<br>
+        7. Envoyez le recu par WhatsApp
+      </div>
+    </div>
+    <a id="pay-wa-btn" href="#" target="_blank" class="cta-wa" style="display:none;margin-top:8px">
+      <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Confirmer mon paiement via WhatsApp
+    </a>
+  </div>
+
+  <div class="sec">
+    <div class="sdiv"><div class="sl"></div><span class="st">Blog TFG</span><div class="sl"></div></div>
+    <div class="sec-title">Guides et conseils gratuits</div>
+    <p class="sec-sub">Articles pour reussir vos certifications et votre immigration</p>
+  </div>
+  <div id="blog-list">
+    <div class="blog-card" onclick="openBlog(0)">
+      <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&q=70" alt="TCF Canada"/>
+      <div class="blog-body">
+        <span class="blog-tag">TCF CANADA</span>
+        <div class="blog-title">TCF Canada Yaounde 2026 - Guide complet pour reussir</div>
+        <div class="blog-meta">TFG Institute · 5 min de lecture</div>
+      </div>
+    </div>
+    <div class="blog-card" onclick="openBlog(1)">
+      <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&q=70" alt="Visa Canada"/>
+      <div class="blog-body">
+        <span class="blog-tag">IMMIGRATION</span>
+        <div class="blog-title">Visa Canada depuis le Cameroun - Toutes les etapes</div>
+        <div class="blog-meta">TFG Institute · 7 min de lecture</div>
+      </div>
+    </div>
+    <div class="blog-card" onclick="openBlog(2)">
+      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=70" alt="DELF"/>
+      <div class="blog-body">
+        <span class="blog-tag">DELF / DALF</span>
+        <div class="blog-title">Combien coute le DELF a Yaounde ? Prix et conseils 2026</div>
+        <div class="blog-meta">TFG Institute · 4 min de lecture</div>
+      </div>
+    </div>
+  </div>
+  <div id="blog-article" class="blog-article">
+    <div style="margin-bottom:12px"><button class="bbtn" onclick="closeBlog()">← Retour aux articles</button></div>
+    <div id="blog-article-content" class="blog-article-body"></div>
+  </div>
+
+  <div class="sec">
+    <div class="sdiv"><div class="sl"></div><span class="st">Temoignages video</span><div class="sl"></div></div>
+    <div class="sec-title">Ils parlent de TFG</div>
+    <p class="sec-sub">Nos etudiants temoignent de leur parcours</p>
+  </div>
+  <div>
+    <div class="vid-card">
+      <div class="vid-thumb" onclick="openYoutube('https://youtube.com/results?search_query=TCF+Canada+temoignage')">
+        <img src="https://images.unsplash.com/photo-1560439513-74b037a25d84?w=400&q=70" alt=""/>
+        <div class="vid-play"><div class="vid-play-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="#001234"><path d="M8 5v14l11-7z"/></svg></div></div>
+      </div>
+      <div class="vid-info">
+        <div class="vid-name">Aminata K. - TCF Canada B2</div>
+        <div class="vid-meta">J ai obtenu mon visa en 3 mois grace a TFG</div>
+      </div>
+    </div>
+    <div class="vid-card">
+      <div class="vid-thumb" onclick="openYoutube('https://youtube.com/results?search_query=Goethe+Zertifikat+Cameroun')">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=70" alt=""/>
+        <div class="vid-play"><div class="vid-play-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="#001234"><path d="M8 5v14l11-7z"/></svg></div></div>
+      </div>
+      <div class="vid-info">
+        <div class="vid-name">Eboa M. - Goethe B1</div>
+        <div class="vid-meta">Bourse d etudes en Allemagne - mon parcours avec TFG</div>
+      </div>
+    </div>
+    <div class="vid-card">
+      <div class="vid-thumb" onclick="openYoutube('https://youtube.com/results?search_query=IELTS+Cameroun+temoignage')">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=70" alt=""/>
+        <div class="vid-play"><div class="vid-play-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="#001234"><path d="M8 5v14l11-7z"/></svg></div></div>
+      </div>
+      <div class="vid-info">
+        <div class="vid-name">Ngo Sophie - IELTS C1</div>
+        <div class="vid-meta">Recrutee par une multinationale grace a mon anglais TFG</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:10px">
+      <p style="color:rgba(255,255,255,.38);font-size:.72rem;margin-bottom:8px">Vous avez une video a partager ?</p>
+      <a href="https://wa.me/237674373396?text=Bonjour TFG ! Je veux partager mon temoignage video." target="_blank" class="cta-sec" style="display:inline-flex;gap:6px">Partager mon temoignage</a>
+    </div>
+  </div>
+
+  <div class="sec" style="margin-top:20px">
+    <div class="sdiv"><div class="sl"></div><span class="st">Entreprises</span><div class="sl"></div></div>
+    <div class="sec-title">Formez vos equipes</div>
+    <p class="sec-sub">Solutions B2B sur-mesure pour entreprises et organisations</p>
+  </div>
+  <div class="b2b-card">
+    <span class="b2b-badge">SOLUTIONS B2B</span>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:8px">Formation en entreprise</div>
+    <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:14px">
+      <div style="color:rgba(255,255,255,.65);font-size:.78rem;display:flex;gap:7px"><span style="color:#38bdf8">✓</span>Devis personnalise sous 24h</div>
+      <div style="color:rgba(255,255,255,.65);font-size:.78rem;display:flex;gap:7px"><span style="color:#38bdf8">✓</span>Cours en entreprise ou a distance</div>
+      <div style="color:rgba(255,255,255,.65);font-size:.78rem;display:flex;gap:7px"><span style="color:#38bdf8">✓</span>Factures et contrats officiels</div>
+      <div style="color:rgba(255,255,255,.65);font-size:.78rem;display:flex;gap:7px"><span style="color:#38bdf8">✓</span>Tarifs groupes degressifs</div>
+      <div style="color:rgba(255,255,255,.65);font-size:.78rem;display:flex;gap:7px"><span style="color:#38bdf8">✓</span>Certificats avec logo entreprise</div>
+    </div>
+    <div class="inscr-grid" style="margin-bottom:12px">
+      <div class="inscr-group"><label class="inscr-label">Nom de l entreprise</label><input class="inscr-input" id="b2b-company" placeholder="SARL Mon Entreprise"/></div>
+      <div class="inscr-group"><label class="inscr-label">Responsable RH</label><input class="inscr-input" id="b2b-contact" placeholder="Jean Dupont"/></div>
+      <div class="inscr-group"><label class="inscr-label">Telephone</label><input class="inscr-input" id="b2b-tel" placeholder="+237 6XX XXX XXX"/></div>
+      <div class="inscr-group"><label class="inscr-label">Nombre d employes</label>
+        <select class="inscr-select" id="b2b-size">
+          <option value="">Choisir...</option>
+          <option>1-5 employes</option><option>6-20 employes</option>
+          <option>21-50 employes</option><option>50+ employes</option>
+        </select>
+      </div>
+    </div>
+    <div class="inscr-group" style="margin-bottom:12px"><label class="inscr-label">Langue souhaitee</label>
+      <select class="inscr-select" id="b2b-lang">
+        <option value="">Choisir...</option>
+        <option>Francais TCF/DELF</option><option>Anglais IELTS/TOEFL</option>
+        <option>Allemand Goethe</option><option>Espagnol DELE</option><option>Autre</option>
+      </select>
+    </div>
+    <button class="cta-primary" onclick="submitB2B()">Demander un devis gratuit</button>
+    <div id="b2b-success" style="display:none;margin-top:10px;color:#4ade80;font-size:.8rem;text-align:center">Demande envoyee ! Nous vous contactons sous 24h.</div>
+  </div>
+
+  <div class="sec">
+    <div class="sdiv"><div class="sl"></div><span class="st">Ambassadeurs</span><div class="sl"></div></div>
+    <div class="sec-title">Parrainez vos amis</div>
+    <p class="sec-sub">Recommandez TFG et obtenez des reductions</p>
+  </div>
+  <div class="aff-card">
+    <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:6px">Programme Ambassadeur TFG</div>
+    <div style="display:flex;flex-direction:column;gap:5px;margin-bottom:14px">
+      <div style="color:rgba(255,255,255,.65);font-size:.78rem">🎁 Vous parrainez un ami → <strong style="color:var(--gold)">-5 000 FCFA</strong> sur votre prochain niveau</div>
+      <div style="color:rgba(255,255,255,.65);font-size:.78rem">🎁 Votre ami obtient → <strong style="color:var(--gold)">-5 000 FCFA</strong> a son inscription</div>
+      <div style="color:rgba(255,255,255,.65);font-size:.78rem">🏆 3 parrainages → 1 niveau OFFERT</div>
+    </div>
+    <div class="inscr-group" style="margin-bottom:10px"><label class="inscr-label">Votre nom (pour generer votre code)</label><input class="inscr-input" id="aff-name" placeholder="Ex: Sophie"/></div>
+    <button class="cta-primary" onclick="genAffCode()" style="margin-bottom:10px">Generer mon code parrain</button>
+    <div id="aff-result" style="display:none">
+      <div class="aff-code" id="aff-code-display">TFG-XXXXX</div>
+      <a id="aff-wa-share" href="#" target="_blank" class="cta-wa" style="margin-top:8px">Partager mon code sur WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sdiv"><div class="sl"></div><span class="st">Checklist Visa</span><div class="sl"></div></div>
+    <div class="sec-title">Preparez votre dossier visa</div>
+    <p class="sec-sub">Checklist interactive — cochez au fur et a mesure</p>
+  </div>
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:18px;padding:18px;margin-bottom:28px">
+    <div class="visa-tab">
+      <button class="visa-tab-btn act" onclick="showVisa('ca')">Canada</button>
+      <button class="visa-tab-btn" onclick="showVisa('fr')">France</button>
+      <button class="visa-tab-btn" onclick="showVisa('de')">Allemagne</button>
+    </div>
+    <div class="visa-prog"><div class="visa-prog-fill" id="visa-prog" style="width:0%"></div></div>
+    <div style="font-size:.67rem;color:rgba(255,255,255,.35);margin-bottom:10px" id="visa-prog-txt">0 document pret</div>
+    <div id="visa-list"></div>
+  </div>
+
+  <div class="sec">
+    <div class="sdiv"><div class="sl"></div><span class="st">FAQ</span><div class="sl"></div></div>
+    <div class="sec-title">Questions fréquentes</div>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item" onclick="toggleFaq(this)"><button class="faq-btn">Où se trouve le centre ?<span style="color:var(--gold)">▼</span></button><div class="faq-ans">Nous sommes situés à Nkolfulou, Yaoundé. Un cadre calme, idéal pour l'apprentissage des langues.</div></div>
+    <div class="faq-item" onclick="toggleFaq(this)"><button class="faq-btn">Les supports sont-ils inclus ?<span style="color:var(--gold)">▼</span></button><div class="faq-ans">Le pack complet (fascicules, audio, vidéos, 1 000+ exercices) est disponible à 15 000 FCFA seulement.</div></div>
+    <div class="faq-item" onclick="toggleFaq(this)"><button class="faq-btn">Comment s'inscrire ?<span style="color:var(--gold)">▼</span></button><div class="faq-ans">Passez notre test de niveau gratuit, réglez les frais d'inscription (10 000 FCFA) et commencez dès le lundi suivant !</div></div>
+    <div class="faq-item" onclick="toggleFaq(this)"><button class="faq-btn">Cours en ligne disponibles ?<span style="color:var(--gold)">▼</span></button><div class="faq-ans">Oui, cours hybrides via Zoom/WhatsApp selon votre emploi du temps, 7j/7.</div></div>
+    <div class="faq-item" onclick="toggleFaq(this)"><button class="faq-btn">Quels pays peut-on viser ?<span style="color:var(--gold)">▼</span></button><div class="faq-ans">Canada, France, Belgique, Suisse, Allemagne, Espagne, Italie, Russie, Chine, Royaume-Uni, USA, Australie.</div></div>
+    <div class="faq-item" onclick="toggleFaq(this)"><button class="faq-btn">Comment s'inscrire au TCF Canada à Yaoundé ?<span style="color:var(--gold)">▼</span></button><div class="faq-ans">TFG propose des préparations complètes au TCF Canada. Nos cours couvrent les 4 compétences (CO, CE, EO, EE) avec simulations d'examen. Contactez-nous au +237 674 373 396.</div></div>
+    <div class="faq-item" onclick="toggleFaq(this)"><button class="faq-btn">Quel est le prix des formations TFG ?<span style="color:var(--gold)">▼</span></button><div class="faq-ans">Français &amp; Anglais dès 25 000 FCFA/niveau · Espagnol 65 000 FCFA · Allemand 85 000 FCFA · Russe &amp; Chinois 120 000 FCFA. Chaque niveau = 6 semaines.</div></div>
+    <div class="faq-item" onclick="toggleFaq(this)"><button class="faq-btn">Combien de temps pour atteindre le niveau B2 ?<span style="color:var(--gold)">▼</span></button><div class="faq-ans">De A1 à B2 = 4 niveaux = ~24 semaines. En partant de A2, comptez 12 à 18 semaines selon votre rythme.</div></div>
+    <div class="faq-item" onclick="toggleFaq(this)"><button class="faq-btn">Quelles certifications préparez-vous ?<span style="color:var(--gold)">▼</span></button><div class="faq-ans">TCF · DELF · DALF · IELTS · TOEFL · Goethe-Zertifikat · DELE · CILS · TORFL · HSK — toutes les grandes certifications internationales.</div></div>
+  </div>
+
+  <div class="sec" style="margin-top:28px">
+    <div class="sdiv"><div class="sl"></div><span class="st">Inscription</span><div class="sl"></div></div>
+    <div class="sec-title">Inscrivez-vous maintenant</div>
+    <p class="sec-sub">Remplissez ce formulaire · Nous vous contactons sous 24h</p>
+  </div>
+  <div class="inscr-section">
+    <div class="inscr-title">Formulaire d'inscription</div>
+    <div class="inscr-sub">Gratuit · Sans engagement · Réponse sous 24h</div>
+    <div class="inscr-grid">
+      <div class="inscr-group"><label class="inscr-label">Prénom *</label><input class="inscr-input" id="reg-prenom" placeholder="Jean"/></div>
+      <div class="inscr-group"><label class="inscr-label">Nom *</label><input class="inscr-input" id="reg-nom" placeholder="Dupont"/></div>
+      <div class="inscr-group"><label class="inscr-label">Téléphone *</label><input class="inscr-input" id="reg-tel" placeholder="+237 6XX XXX XXX"/></div>
+      <div class="inscr-group"><label class="inscr-label">Email</label><input class="inscr-input" id="reg-email" placeholder="email@gmail.com"/></div>
+      <div class="inscr-group"><label class="inscr-label">Langue souhaitée</label>
+        <select class="inscr-select" id="reg-lang">
+          <option value="">Choisir...</option>
+          <option>Français TCF/DELF</option><option>English Program</option>
+          <option>Deutsch Kurs</option><option>Español</option>
+          <option>Italiano</option><option>Русский язык</option><option>中文课程</option>
+        </select>
+      </div>
+      <div class="inscr-group"><label class="inscr-label">Ville</label><input class="inscr-input" id="reg-ville" placeholder="Yaoundé"/></div>
+    </div>
+    <div class="inscr-group" style="margin-bottom:12px"><label class="inscr-label">Message (optionnel)</label><input class="inscr-input" id="reg-msg" placeholder="Votre objectif (visa, études, travail...)"/></div>
+    <button class="cta-primary" onclick="submitInscription()">Envoyer mon inscription →</button>
+    <div class="inscr-success" id="inscr-success">✅ Inscription enregistrée ! Nous vous contactons très bientôt.</div>
+  </div>
+
+  <div class="sec">
+    <div class="sdiv"><div class="sl"></div><span class="st">Contact</span><div class="sl"></div></div>
+    <div class="sec-title">Contactez-nous</div>
+  </div>
+  <div class="contact-card">
+    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80" alt=""/>
+    <p class="contact-sub">Disponible du lundi au samedi de 8h à 18h.</p>
+    <div class="contact-rows">
+      <div class="crow">📞 <b>+237 674 373 396</b></div>
+      <div class="crow">📞 <b>+237 688 666 084</b></div>
+      <div class="crow">✉️ <b><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0f7b696866617b6a7d616e7b6660616e6366617c7b667b7a7b6a4f68626e6663216c6062"><span class="__cf_email__" data-cfemail="94e0f2f3fdfae0f1e6faf5e0fdfbfaf5f8fdfae7e0fde0e1e0f1d4f3f9f5fdf8baf7fbf9">tfginternationalinstitute@gmail.com</span></a></b></div>
+      <div class="crow">📍 <b>Nkolfulou, Yaoundé, Cameroun</b></div>
+      <div class="crow">🕐 <b>Lun-Sam · 8h00 - 18h00</b></div>
+    </div>
+    <div class="ctarow">
+      <a href="https://wa.me/237674373396?text=Bonjour%20TFG%20!" target="_blank" class="cta-wa"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp 1 : +237 674 373 396</a>
+      <a href="https://wa.me/237688666084?text=Bonjour%20TFG%20!" target="_blank" class="cta-wa" style="background:linear-gradient(135deg,#128C7E,#075E54)"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp 2 : +237 688 666 084</a>
+      <a href="/cdn-cgi/l/email-protection#3b6f5d5c52554f5e49555a4f5254555a575255484f524f4e4f5e7b5c565a525715585456" class="cta-sec">✉️ <span class="__cf_email__" data-cfemail="ef9b898886819b8a9d818e9b8680818e8386819c9b869b9a9b8aaf88828e8683c18c8082"><span class="__cf_email__" data-cfemail="f38795949a9d8796819d92879a9c9d929f9a9d80879a87868796b3949e929a9fdd909c9e">tfginternationalinstitute@gmail.com</span></span></a>
+    </div>
+  </div>
+</div><!-- /page-landing -->
+
+<!-- CONTACT -->
+<div id="page-contact" class="gc animate-in page-hidden" style="margin:14px">
+  <div class="qwrap">
+    <div class="qhdr"><button class="bbtn" onclick="showPage('landing')">← Retour</button><span style="color:rgba(212,175,55,.7);font-size:.72rem;font-weight:600">TFG Yaoundé</span></div>
+    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80" alt="" style="width:100%;height:100px;object-fit:cover;border-radius:11px;margin-bottom:12px;filter:brightness(.5);display:block"/>
+    <div style="text-align:center;margin-bottom:14px">
+      <div style="font-size:1.7rem;margin-bottom:5px">📞</div>
+      <div class="form-title" style="text-align:center">TFG INTERNATIONALE INSTITUTE LANGUAGE</div>
+      <p class="form-sub" style="text-align:center">Lun-Sam 8h00 - 18h00</p>
+    </div>
+    <div class="contact-rows" style="margin-bottom:14px">
+      <div class="crow">📞 <b>+237 674 373 396</b></div>
+      <div class="crow">📞 <b>+237 688 666 084</b></div>
+      <div class="crow">✉️ <b><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3f4b595856514b5a4d515e4b5650515e5356514c4b564b4a4b5a7f58525e5653115c5052"><span class="__cf_email__" data-cfemail="0c786a6b656278697e626d786563626d6065627f7865787978694c6b616d6560226f6361">tfginternationalinstitute@gmail.com</span></a></b></div>
+      <div class="crow">📍 <b>Nkolfulou, Yaoundé</b></div>
+    </div>
+    <div class="ctarow">
+      <a href="https://wa.me/237674373396?text=Bonjour%20TFG%20!" target="_blank" class="cta-wa"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp 1</a>
+      <a href="https://wa.me/237688666084?text=Bonjour%20TFG%20!" target="_blank" class="cta-wa" style="background:linear-gradient(135deg,#128C7E,#075E54)"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp 2</a>
+      <button class="cta-primary" onclick="showPage('home')">Passer le test de niveau</button>
+    </div>
+  </div>
+</div>
+
+<!-- HOME choix langue -->
+<div id="page-home" class="gc animate-in page-hidden" style="margin:14px">
+  <div class="qwrap">
+    <div style="text-align:center;margin-bottom:14px">
+      <div style="font-family:'Cormorant Garamond',serif;color:#fff;font-size:1.2rem;font-weight:700;margin-bottom:3px">Choisissez votre langue</div>
+      <div style="color:rgba(255,255,255,.38);font-size:.73rem">7 programmes · A1 à C2 · Test gratuit</div>
+    </div>
+    <div class="lang-grid" style="margin-bottom:0">
+      <div class="lang-btn" onclick="startTest('fr')"><span class="lang-flag">🇫🇷</span><span class="lang-name">Français TCF/DELF</span><span class="lang-lvl">A1 → C2</span></div>
+      <div class="lang-btn" onclick="startTest('en')"><span class="lang-flag">🇬🇧</span><span class="lang-name">English Program</span><span class="lang-lvl">A1 → C2</span></div>
+      <div class="lang-btn" onclick="startTest('de')"><span class="lang-flag">🇩🇪</span><span class="lang-name">Deutsch Kurs</span><span class="lang-lvl">A1 → C2</span></div>
+      <div class="lang-btn" onclick="startTest('es')"><span class="lang-flag">🇪🇸</span><span class="lang-name">Español</span><span class="lang-lvl">A1 → C2</span></div>
+      <div class="lang-btn" onclick="startTest('it')"><span class="lang-flag">🇮🇹</span><span class="lang-name">Italiana</span><span class="lang-lvl">A1 → C2</span></div>
+      <div class="lang-btn" onclick="startTest('ru')"><span class="lang-flag">🇷🇺</span><span class="lang-name">Русский язык</span><span class="lang-lvl">A1 → C2</span></div>
+      <div class="lang-btn" onclick="startTest('zh')"><span class="lang-flag">🇨🇳</span><span class="lang-name">中文课程</span><span class="lang-lvl">A1 → C2</span></div>
+    </div>
+    <div style="margin-top:12px"><button class="cta-sec" style="width:100%" onclick="showPage('sessions')">📅 Voir les sessions</button></div>
+  </div>
+</div>
+
+<!-- SESSIONS -->
+<div id="page-sessions" class="gc animate-in page-hidden" style="margin:14px">
+  <div class="qwrap">
+    <div class="qhdr"><button class="bbtn" onclick="showPage('landing')">← Retour</button><span style="color:rgba(212,175,55,.7);font-size:.72rem;font-weight:600">📅 Agenda 2026</span></div>
+    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80" alt="" style="width:100%;height:95px;object-fit:cover;border-radius:10px;margin-bottom:12px;filter:brightness(.5);display:block"/>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:2px">Prochaines Sessions</div>
+    <p style="color:rgba(255,255,255,.36);font-size:.72rem;margin-bottom:14px">Réservez via WhatsApp · Places limitées</p>
+    <div id="sessions-list"></div>
+  </div>
+</div>
+
+<!-- REGISTER -->
+<div id="page-register" class="gc animate-in page-hidden" style="margin:14px">
+  <div class="qwrap">
+    <div class="qhdr"><button class="bbtn" onclick="showPage('home')">← Retour</button><span id="reg-lang-label" style="font-size:.74rem;color:rgba(255,255,255,.5)"></span></div>
+    <div class="form-title">Votre profil</div>
+    <p class="form-sub">Ces informations apparaîtront sur votre certificat.</p>
+    <div class="frow">
+      <div class="fgroup"><label class="flbl">Prénom *</label><input class="finput" id="inp-first" placeholder="Jean"/></div>
+      <div class="fgroup"><label class="flbl">Nom *</label><input class="finput" id="inp-last" placeholder="Dupont"/></div>
+    </div>
+    <div class="fgroup"><label class="flbl">Ville / Pays</label><input class="finput" id="inp-city" placeholder="Yaoundé, Cameroun"/></div>
+    <div class="fgroup" style="margin-bottom:14px"><label class="flbl">Téléphone (optionnel)</label><input class="finput" id="inp-phone" placeholder="+237 6XX XXX XXX"/></div>
+    <div id="form-err" style="color:#f87171;font-size:.72rem;margin-bottom:8px;display:none">Veuillez renseigner prénom et nom.</div>
+    <button class="cta-primary" onclick="submitRegister()">Commencer le test →</button>
+  </div>
+</div>
+
+<!-- QUIZ -->
+<div id="page-quiz" class="gc animate-in page-hidden" style="margin:14px">
+  <div class="qwrap">
+    <div class="qhdr"><button class="bbtn" onclick="resetAll()">← Quitter</button><span id="quiz-lang-label" style="font-size:.74rem;color:rgba(255,255,255,.5)"></span></div>
+    <div id="comp-banner" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px">
+      <span id="comp-ce" style="font-size:.64rem;font-weight:700;padding:3px 9px;border-radius:20px;background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.3);color:var(--gold)">📖 Compréhension Écrite</span>
+      <span id="comp-ee" style="font-size:.64rem;font-weight:700;padding:3px 9px;border-radius:20px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.4)">✍️ Expression Écrite</span>
+      <span id="comp-eo" style="font-size:.64rem;font-weight:700;padding:3px 9px;border-radius:20px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.4)">🎙 Expression Orale</span>
+      <span id="comp-co" style="font-size:.64rem;font-weight:700;padding:3px 9px;border-radius:20px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.4)">🔊 Compréhension Orale</span>
+    </div>
+    <div class="prog-bar-wrap">
+      <div class="prog-top"><span style="color:var(--muted)">Progression</span><span id="prog-text" style="color:var(--gold);font-weight:600">1 / 10</span></div>
+      <div class="prog-bar"><div class="prog-fill" id="prog-fill" style="width:10%"></div></div>
+    </div>
+    <div class="lvl-badge" id="lvl-badge">Niveau A1</div>
+    <div class="q-text" id="q-text"></div>
+    <div class="opts" id="opts"></div>
+    <div id="feedback" class="hidden"></div>
+    <button class="next-btn hidden" id="next-btn" onclick="nextQuestion()">Question suivante →</button>
+  </div>
+</div>
+
+<!-- ORAL -->
+<div id="page-oral" class="gc animate-in page-hidden" style="margin:14px">
+  <div class="qwrap">
+    <div class="steps">
+      <span class="step done">✓ CE <span id="oral-score">0</span>/10</span>
+      <span style="color:rgba(255,255,255,.2);font-size:.6rem">›</span>
+      <span class="step done">✓ EE</span>
+      <span style="color:rgba(255,255,255,.2);font-size:.6rem">›</span>
+      <span class="step active">🎙 EO</span>
+      <span style="color:rgba(255,255,255,.2);font-size:.6rem">›</span>
+      <span class="step pend">CO</span>
+      <span style="color:rgba(255,255,255,.2);font-size:.6rem">›</span>
+      <span class="step pend">Certificat</span>
+    </div>
+    <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(212,175,55,.09);border:1px solid rgba(212,175,55,.26);border-radius:50px;padding:4px 12px;margin-bottom:11px;font-size:.67rem;font-weight:700;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase">🎙 Expression orale</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:700;color:#fff;margin-bottom:3px">Épreuve Orale</div>
+    <div id="oral-lang-label" style="color:rgba(255,255,255,.38);font-size:.73rem;margin-bottom:14px"></div>
+    <div class="oral-subj"><div class="oral-lbl">Sujet de l'épreuve</div><div class="oral-txt" id="oral-subject"></div></div>
+    <button class="audio-btn" id="audio-btn" onclick="listenSubject()">🔊 Écouter le sujet</button>
+    <div class="your-turn hidden" id="your-turn">🎙️ <b style="color:var(--gold)">À vous de parler !</b><br/><span style="font-size:.73rem">Enregistrez puis envoyez au Coach.</span></div>
+    <div class="rec-zone">
+      <div class="rec-lbl">🎙 Enregistrement audio</div>
+      <div class="waves hidden" id="rec-waves">
+        <div class="wave-bar" style="animation-delay:.00s;height:8px"></div><div class="wave-bar" style="animation-delay:.08s;height:18px"></div>
+        <div class="wave-bar" style="animation-delay:.16s;height:26px"></div><div class="wave-bar" style="animation-delay:.24s;height:18px"></div>
+        <div class="wave-bar" style="animation-delay:.32s;height:10px"></div>
+      </div>
+      <div class="rec-timer hidden" id="rec-timer">00:00</div>
+      <audio id="rec-audio" controls style="width:100%;border-radius:7px;margin-bottom:9px;display:none"></audio>
+      <div class="rec-btns" id="rec-btns"><button class="rec-btn start" onclick="startRec()">🎙 Démarrer</button></div>
+      <div id="rec-ready" style="color:rgba(74,222,128,.75);font-size:.69rem;margin-top:7px;text-align:center;display:none">Audio prêt · Envoyez au Coach via WhatsApp</div>
+    </div>
+    <div class="ctarow">
+      <a id="wa-oral-btn" href="#" target="_blank" class="cta-wa"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Envoyer score + audio au Coach</a>
+      <button class="cta-sec" onclick="showPage('results')">› Voir mes résultats</button>
+    </div>
+  </div>
+</div>
+
+<!-- RESULTS -->
+<div id="page-results" class="gc animate-in page-hidden" style="margin:14px">
+  <div class="qwrap" style="text-align:center">
+    <div class="res-circle" id="res-emoji">🏆</div>
+    <div class="score-big"><span id="res-score">0</span><span style="color:var(--muted);font-size:1.5rem">/10</span></div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:#fff;margin-bottom:5px;font-weight:700" id="res-title">Excellent !</div>
+    <p style="color:rgba(255,255,255,.38);font-size:.8rem;margin-bottom:18px;line-height:1.55" id="res-msg"></p>
+    <div class="sbars" id="sbars"></div>
+    <div style="display:flex;align-items:flex-start;gap:9px;background:rgba(212,175,55,.05);border:1px solid rgba(212,175,55,.16);border-radius:11px;padding:10px;margin-bottom:13px"><div class="blink-dot"></div><div style="color:rgba(255,255,255,.65);font-size:.7rem;line-height:1.4"><b style="color:var(--gold)">Épreuve Orale en cours de validation.</b><br/>Résultat final sous 24h.</div></div>
+    <div class="ctarow">
+      <button class="cta-primary" onclick="showPage('certificate')">Voir mon certificat</button>
+      <button class="cta-primary" style="background:linear-gradient(135deg,#1a3a7a,#002366);color:#fff;box-shadow:none" onclick="showPage('sessions')">📅 Réserver une session</button>
+      <a id="wa-results-btn" href="#" target="_blank" class="cta-wa"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Envoyer mes résultats</a>
+      <button class="cta-sec" onclick="resetAll()">🔄 Nouveau test</button>
+    </div>
+  </div>
+</div>
+
+<!-- CERTIFICATE -->
+<div id="page-certificate" class="gc animate-in page-hidden" style="margin:14px">
+  <div class="qwrap">
+    <div class="cert-card">
+      <div class="cert-corner tl"></div><div class="cert-corner tr"></div><div class="cert-corner bl"></div><div class="cert-corner br"></div>
+      <img src="https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=600&q=80" alt=""/>
+      <div class="cert-logo">TFG</div>
+      <div class="cert-logo-sub">Internationale Institute Language</div>
+      <div class="cert-hr"></div>
+      <div class="cert-main-title">Certificat de Pré-évaluation Linguistique</div>
+      <div class="cert-sub-title">TFG INTERNATIONALE INSTITUTE LANGUAGE · Yaoundé, Cameroun</div>
+      <div class="cert-awarded" style="margin-top:9px">Décerné à</div>
+      <div class="cert-name" id="cert-name">Candidat(e)</div>
+      <div class="cert-city" id="cert-city"></div>
+      <div class="cert-grid">
+        <div class="cert-item"><div class="cert-item-lbl">Langue</div><div class="cert-item-val" id="cert-lang">—</div></div>
+        <div class="cert-item"><div class="cert-item-lbl">Score QCM</div><div class="cert-item-val" id="cert-score" style="color:var(--gold);font-size:.95rem;font-weight:900">—</div></div>
+        <div class="cert-item"><div class="cert-item-lbl">Niveau CECRL</div><div class="cert-item-val"><span class="cert-lvl" id="cert-lvl">—</span></div></div>
+        <div class="cert-item"><div class="cert-item-lbl">Date</div><div class="cert-item-val" id="cert-date" style="font-size:.68rem;color:rgba(255,255,255,.58)">—</div></div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:7px;background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.16);border-radius:9px;padding:7px 10px;margin-bottom:9px"><div class="blink-dot" style="margin-top:3px"></div><div style="color:var(--text);font-size:.66rem;line-height:1.4"><b style="color:var(--gold)">Épreuve Orale en cours de validation.</b> Résultat final sous 24h.</div></div>
+      <div class="cert-bottom">
+        <div class="cert-sig"><div class="cert-sig-line"></div><div class="cert-sig-name">Dr. TFG</div><div class="cert-sig-role">Directeur Pédagogique</div></div>
+        <div class="cert-seal"><div class="cert-seal-txt">TFG</div><div class="cert-seal-sub">Institut</div></div>
+      </div>
+    </div>
+    <div style="margin-bottom:12px">
+      <div style="font-size:.68rem;color:rgba(212,175,55,.7);font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px">Partager mon certificat</div>
+      <div class="share-btns">
+        <button class="share-btn share-wa" onclick="shareCertWA()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </button>
+        <button class="share-btn share-fb" onclick="shareCertFB()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </button>
+        <button class="share-btn share-dl" onclick="downloadCert()">
+          Telecharger
+        </button>
+      </div>
+    </div>
+    <div class="ctarow">
+      <a id="wa-cert-btn" href="#" target="_blank" class="cta-wa"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Partager mon certificat</a>
+      <button class="cta-sec" onclick="showPage('sessions')">📅 Réserver une session</button>
+      <button class="cta-sec" onclick="resetAll()">🔄 Nouveau test</button>
+    </div>
+  </div>
+</div>
+
+<!-- ESPACE ETUDIANT -->
+<div id="page-etudiant" class="gc animate-in page-hidden" style="margin:14px">
+  <div class="qwrap">
+    <div class="qhdr"><button class="bbtn" onclick="showPage('landing')">← Retour</button><span style="color:rgba(212,175,55,.7);font-size:.72rem;font-weight:600">Espace Etudiant</span></div>
+    <div class="etu-login" id="etu-login-screen">
+      <div style="text-align:center;margin-bottom:16px">
+        <div style="font-size:2rem;margin-bottom:6px">🎓</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:3px">Mon Espace TFG</div>
+        <p style="color:rgba(255,255,255,.38);font-size:.75rem">Connectez-vous avec le code recu par WhatsApp</p>
+      </div>
+      <div class="fgroup" style="margin-bottom:10px"><label class="flbl">Votre prenom</label><input class="finput" id="etu-prenom" placeholder="Ex: Sophie"/></div>
+      <div class="fgroup" style="margin-bottom:14px"><label class="flbl">Code d acces (4 chiffres)</label><input class="finput" id="etu-code" placeholder="1234" maxlength="4" type="tel"/></div>
+      <div id="etu-err" style="color:#f87171;font-size:.72rem;margin-bottom:8px;display:none">Code incorrect. Contactez TFG via WhatsApp.</div>
+      <button class="cta-primary" onclick="etuLogin()" style="margin-bottom:10px">Acceder a mon espace</button>
+      <a href="https://wa.me/237674373396?text=Bonjour TFG ! Je veux acceder a mon espace etudiant." target="_blank" class="cta-sec" style="display:flex;align-items:center;justify-content:center;gap:6px">Pas encore de code ? Contactez-nous</a>
+    </div>
+    <div id="etu-dashboard" class="etu-dash">
+      <div class="etu-welcome" id="etu-nom">Bienvenue !</div>
+      <p style="color:rgba(255,255,255,.38);font-size:.73rem;margin-bottom:16px" id="etu-lang-info">Langue en cours</p>
+      <div class="etu-card">
+        <div class="etu-card-title">Ma Progression</div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:5px">
+          <span style="color:rgba(255,255,255,.6);font-size:.74rem">Niveau actuel</span>
+          <span style="color:var(--gold);font-weight:700;font-size:.8rem" id="etu-lvl-curr">A1</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:8px">
+          <span style="color:rgba(255,255,255,.6);font-size:.74rem">Objectif</span>
+          <span style="color:#4ade80;font-weight:700;font-size:.8rem" id="etu-lvl-target">B2</span>
+        </div>
+        <div class="etu-prog-bar"><div class="etu-prog-fill" id="etu-prog" style="width:20%"></div></div>
+        <div style="color:rgba(255,255,255,.35);font-size:.65rem;margin-top:3px" id="etu-prog-txt">1 niveau complete sur 4</div>
+      </div>
+      <div class="etu-card">
+        <div class="etu-card-title">Mes Resultats de tests</div>
+        <div id="etu-tests-list" style="display:flex;flex-direction:column;gap:6px"></div>
+      </div>
+      <div class="etu-card">
+        <div class="etu-card-title">Prochaine Session</div>
+        <div id="etu-next-session" style="color:rgba(255,255,255,.65);font-size:.78rem;line-height:1.6"></div>
+      </div>
+      <div class="etu-card">
+        <div class="etu-card-title">Mes Badges</div>
+        <div id="etu-badges"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px">
+        <button class="cta-primary" onclick="showPage('home')">Passer un nouveau test</button>
+        <button class="cta-sec" onclick="etuLogout()">Deconnexion</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BACK OFFICE -->
+<div id="page-backoffice" class="gc animate-in page-hidden" style="margin:14px">
+  <div id="bo-login-screen" class="bo-login">
+    <div style="font-size:1.8rem;margin-bottom:10px">🔐</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:700;color:#fff;margin-bottom:4px">Back Office TFG</div>
+    <p style="color:rgba(255,255,255,.4);font-size:.78rem;margin-bottom:18px">Accès réservé à l'administrateur</p>
+    <div class="fgroup" style="margin-bottom:12px;text-align:left">
+      <label class="flbl">Mot de passe</label>
+      <input class="finput" type="password" id="bo-pass" placeholder="••••••••" onkeydown="if(event.key==='Enter')boLogin()"/>
+    </div>
+    <p id="bo-err" style="color:#f87171;font-size:.73rem;margin-bottom:8px;display:none">Mot de passe incorrect</p>
+    <button class="cta-primary" onclick="boLogin()">Accéder →</button>
+    <div style="margin-top:12px"><button class="cta-sec" onclick="showPage('landing')">← Retour</button></div>
+  </div>
+  <div id="bo-dashboard" style="display:none">
+    <div class="bo-wrap">
+      <div class="bo-header">
+        <div><div class="bo-title">Inscriptions TFG</div><div style="color:rgba(255,255,255,.35);font-size:.72rem">Gestion des candidats</div></div>
+        <div style="display:flex;gap:7px">
+          <button class="bo-btn" onclick="boExportCSV()">📥 CSV</button>
+          <button class="bo-btn" onclick="boLogout()">Déconnexion</button>
+        </div>
+      </div>
+      <div class="bo-stats">
+        <div class="bo-stat"><div class="bo-stat-val" id="bo-total">0</div><div class="bo-stat-lbl">Total</div></div>
+        <div class="bo-stat"><div class="bo-stat-val" id="bo-new" style="color:#38bdf8">0</div><div class="bo-stat-lbl">Nouveaux</div></div>
+        <div class="bo-stat"><div class="bo-stat-val" id="bo-pending" style="color:#fbbf24">0</div><div class="bo-stat-lbl">En attente</div></div>
+        <div class="bo-stat"><div class="bo-stat-val" id="bo-confirmed" style="color:#4ade80">0</div><div class="bo-stat-lbl">Confirmés</div></div>
+      </div>
+      <div class="dash-chart-wrap" style="margin-bottom:12px">
+        <div class="dash-chart-title">Inscriptions par mois</div>
+        <div class="bar-chart" id="bo-bar-chart"></div>
+        <div style="display:flex;gap:4px;margin-top:4px" id="bo-bar-labels"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
+        <div class="dash-chart-wrap" style="margin-bottom:0">
+          <div class="dash-chart-title">Langues populaires</div>
+          <canvas id="bo-pie" width="100" height="80" style="display:block;margin:0 auto"></canvas>
+        </div>
+        <div class="dash-chart-wrap" style="margin-bottom:0">
+          <div class="dash-chart-title">Taux de conversion</div>
+          <div style="text-align:center;padding:10px 0">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--gold)" id="bo-conv-rate">0%</div>
+            <div style="color:rgba(255,255,255,.38);font-size:.67rem">Test -> Inscription</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bo-filters">
+        <input type="text" id="bo-search" placeholder="Rechercher..." oninput="boFilter()"/>
+        <select id="bo-filter-status" onchange="boFilter()">
+          <option value="">Tous statuts</option>
+          <option>Nouveau</option><option>En attente</option><option>Confirmé</option><option>Annulé</option><option>Test en cours</option><option>Test terminé</option>
+        </select>
+      </div>
+      <div class="bo-tbl-wrap">
+        <table class="bo-tbl">
+          <thead><tr>
+            <th style="width:24%">Candidat</th>
+            <th style="width:20%">Langue</th>
+            <th style="width:16%">Téléphone</th>
+            <th style="width:18%">Détails / Score</th>
+            <th style="width:11%">Statut</th>
+            <th style="width:16%">Actions</th>
+          </tr></thead>
+          <tbody id="bo-tbody"></tbody>
+        </table>
+      </div>
+      <div style="font-size:.68rem;color:rgba(255,255,255,.3);text-align:center" id="bo-count">0 inscrit(s)</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div>© 2026 TFG INTERNATIONALE INSTITUTE LANGUAGE · Yaoundé, Cameroun</div>
+  <div>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cabeacada3a4beafb8a4abbea3a5a4aba6a3a4b9bea3bebfbeaf8aada7aba3a6e4a9a5a7"><span class="__cf_email__" data-cfemail="5f2b393836312b3a2d313e2b3630313e3336312c2b362b2a2b3a1f38323e3633713c3032">tfginternationalinstitute@gmail.com</span></a></div>
+  <div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:center">
+    🔗 <a href="https://tfg-institute.netlify.app" target="_blank">https://tfg-institute.netlify.app</a>
+    <button class="copy-btn" onclick="navigator.clipboard.writeText('https://tfg-institute.netlify.app')">📋 Copier</button>
+  </div>
+</footer>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+const PAGES=['landing','contact','home','sessions','register','quiz','oral','results','certificate','backoffice','etudiant'];
+const BO_PASSWORD='tfg2026';
+let inscriptions=JSON.parse(localStorage.getItem('tfg_inscriptions')||'[]');
+let boNextId=inscriptions.length?Math.max(...inscriptions.map(i=>i.id))+1:1;
+function saveInscriptions(){localStorage.setItem('tfg_inscriptions',JSON.stringify(inscriptions));}
+
+function showPage(p){
+  PAGES.forEach(id=>{
+    const el=document.getElementById('page-'+id);
+    if(el){if(id===p){el.classList.remove('page-hidden');}else{el.classList.add('page-hidden');}}
+  });
+  if(p==='results')buildResults();
+  if(p==='certificate')buildCertificate();
+  if(p==='sessions')buildSessions();
+  window.scrollTo(0,0);
+}
+
+const SESSIONS_DATA=[
+  {id:1,lang:'🇫🇷 Français TCF/DELF',date:'Samedi 29 Mars',time:'09h00-12h00',places:8,lieu:'Centre TFG Yaoundé',price:'25 000 FCFA/niveau'},
+  {id:2,lang:'🇬🇧 English Program',date:'Samedi 29 Mars',time:'14h00-17h00',places:5,lieu:'Centre TFG Yaoundé',price:'30 000 FCFA/niveau'},
+  {id:3,lang:'🇩🇪 Deutsch Kurs',date:'Samedi 5 Avril',time:'09h00-12h00',places:10,lieu:'Centre TFG Yaoundé',price:'85 000 FCFA/niveau'},
+  {id:4,lang:'🇪🇸 Español',date:'Samedi 5 Avril',time:'14h00-17h00',places:7,lieu:'Centre TFG Yaoundé',price:'65 000 FCFA/niveau'},
+  {id:5,lang:'🇮🇹 Italiano',date:'Samedi 12 Avril',time:'09h00-12h00',places:12,lieu:'Centre TFG Yaoundé',price:'70 000 FCFA/niveau'},
+  {id:6,lang:'🇷🇺 Русский язык',date:'Samedi 12 Avril',time:'14h00-17h00',places:6,lieu:'Centre TFG Yaoundé',price:'120 000 FCFA/niveau'},
+  {id:7,lang:'🇨🇳 中文课程',date:'Samedi 19 Avril',time:'09h00-12h00',places:9,lieu:'Centre TFG Yaoundé',price:'120 000 FCFA/niveau'},
+];
+
+function buildSessions(){
+  const WASVG='<svg style="width:16px;height:16px;flex-shrink:0" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>';
+  document.getElementById('sessions-list').innerHTML=SESSIONS_DATA.map(s=>`
+    <div class="session-item">
+      <div class="session-lang">${s.lang}</div>
+      <div class="session-tags">
+        <span class="session-tag">📅 ${s.date}</span>
+        <span class="session-tag">🕐 ${s.time}</span>
+        <span class="session-tag">📍 ${s.lieu}</span>
+        <span class="session-price-tag">💰 ${s.price}</span>
+        <span class="session-places ${s.places<=6?'low':'ok'}">${s.places<=6?'⚠ ':' ✓ '}${s.places} places</span>
+      </div>
+      <a href="https://wa.me/237674373396?text=${encodeURIComponent('Bonjour TFG ! Je souhaite réserver : '+s.lang+' · '+s.date+' · '+s.time+' · '+s.price)}" target="_blank" class="session-reserve">${WASVG} Réserver · ${s.price}</a>
+    </div>`).join('');
+}
+
+function submitInscription(){
+  const prenom=document.getElementById('reg-prenom').value.trim();
+  const nom=document.getElementById('reg-nom').value.trim();
+  const tel=document.getElementById('reg-tel').value.trim();
+  if(!prenom||!nom||!tel){alert('Prénom, nom et téléphone sont obligatoires !');return;}
+  const today=new Date().toLocaleDateString('fr-FR');
+  const now=new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
+  const entry={id:boNextId++,prenom,nom,tel,email:document.getElementById('reg-email').value.trim()||'—',lang:document.getElementById('reg-lang').value||'Non précisé',ville:document.getElementById('reg-ville').value.trim()||'—',message:document.getElementById('reg-msg').value.trim()||'—',statut:'Nouveau',date:today+' '+now};
+  inscriptions.unshift(entry);saveInscriptions();
+  const succ=document.getElementById('inscr-success');succ.style.display='block';
+  ['reg-prenom','reg-nom','reg-tel','reg-email','reg-ville','reg-msg'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('reg-lang').value='';
+  setTimeout(()=>succ.style.display='none',5000);
+  window.open('https://wa.me/237674373396?text='+encodeURIComponent('🔔 NOUVELLE INSCRIPTION TFG !\n\nNom : '+prenom+' '+nom+'\nTél : '+tel+'\nLangue : '+entry.lang+'\nVille : '+entry.ville+'\nDate : '+today+' à '+now+'\n\nContactez ce candidat rapidement !'),'_blank');
+}
+
+function boLogin(){
+  if(document.getElementById('bo-pass').value===BO_PASSWORD){
+    document.getElementById('bo-login-screen').style.display='none';
+    document.getElementById('bo-dashboard').style.display='block';
+    boFilter();
+  }else{document.getElementById('bo-err').style.display='block';setTimeout(()=>document.getElementById('bo-err').style.display='none',3000);}
+}
+function boLogout(){document.getElementById('bo-login-screen').style.display='block';document.getElementById('bo-dashboard').style.display='none';document.getElementById('bo-pass').value='';}
+function boPillClass(s){return s==='Confirmé'?'confirmed':s==='En attente'?'pending':s==='Annulé'?'cancelled':s==='Test en cours'?'test-prog':s==='Test terminé'?'test-done':'new';}
+function boFilter(){
+  const s=document.getElementById('bo-search').value.toLowerCase();
+  const st=document.getElementById('bo-filter-status').value;
+  const filtered=inscriptions.filter(r=>{const name=(r.prenom+' '+r.nom).toLowerCase();return(!s||name.includes(s))&&(!st||r.statut===st);});
+  boRender(filtered);
+}
+function boRender(rows){
+  document.getElementById('bo-total').textContent=inscriptions.length;
+  document.getElementById('bo-new').textContent=inscriptions.filter(r=>r.statut==='Nouveau').length;
+  document.getElementById('bo-pending').textContent=inscriptions.filter(r=>r.statut==='En attente').length;
+  document.getElementById('bo-confirmed').textContent=inscriptions.filter(r=>r.statut==='Confirmé').length;
+  document.getElementById('bo-count').textContent=rows.length+' inscrit(s) affiché(s)';
+  const tb=document.getElementById('bo-tbody');
+  if(!rows.length){tb.innerHTML='<tr><td colspan="6"><div class="bo-empty">Aucune inscription pour le moment</div></td></tr>';return;}
+  tb.innerHTML=rows.map(r=>`<tr>
+    <td><span class="bo-av">${(r.prenom[0]+r.nom[0]).toUpperCase()}</span>${r.prenom} ${r.nom}<br><span style="font-size:.6rem;color:rgba(255,255,255,.3)">${r.date}</span></td>
+    <td style="font-size:.7rem">${r.lang}</td>
+    <td style="font-size:.7rem">${r.tel}</td>
+    <td style="font-size:.68rem;color:rgba(255,255,255,.55);max-width:110px;white-space:normal;line-height:1.3">${r.message&&r.message!=='—'?r.message:r.ville}</td>
+    <td><span class="bo-pill ${boPillClass(r.statut)}">${r.statut}</span></td>
+    <td>
+      <button class="bo-btn wa" onclick="window.open('https://wa.me/'+('${r.tel}'.replace(/\\D/g,''))+'?text='+encodeURIComponent('Bonjour ${r.prenom} ${r.nom} ! TFG vous contacte.'),'_blank')">WA</button>
+      <button class="bo-btn" onclick="boChangeStatut(${r.id})">Statut</button>
+      <button class="bo-btn del" onclick="boDelete(${r.id})">✕</button>
+    </td>
+  </tr>`).join('');
+}
+function boChangeStatut(id){const statuts=['Nouveau','En attente','Confirmé','Annulé','Test en cours','Test terminé'];const r=inscriptions.find(x=>x.id===id);r.statut=statuts[(statuts.indexOf(r.statut)+1)%statuts.length];saveInscriptions();boFilter();}
+function boDelete(id){if(!confirm('Supprimer ?'))return;inscriptions=inscriptions.filter(r=>r.id!==id);saveInscriptions();boFilter();}
+function boExportCSV(){const h='Prénom,Nom,Téléphone,Email,Langue,Ville,Score/Détails,Statut,Date';const rows=inscriptions.map(r=>[r.prenom,r.nom,r.tel,r.email,r.lang,r.ville,(r.message||'—'),r.statut,r.date].join(','));const a=document.createElement('a');a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(h+'\n'+rows.join('\n'));a.download='inscriptions_tfg.csv';a.click();}
+
+const LEVEL_COLORS={A1:'#4ade80',A2:'#86efac',B1:'#fbbf24',B2:'#f97316',C1:'#f43f5e',C2:'#e879f9'};
+function shuffleOptions(qs){return qs.map(q=>{const c=q.options[q.a];const sh=[...q.options].sort(()=>Math.random()-.5);return{...q,options:sh,a:sh.indexOf(c)};});}
+
+const RAW={
+  fr:{title:'Français TCF/DELF',flag:'🇫🇷',speechLang:'fr-FR',oral:'Présentez-vous et expliquez pourquoi vous souhaitez immigrer ou étudier à l\'étranger.',questions:[
+    {q:'Hier, je ________ au centre TFG.',options:['suis allé','vais','ai allé','irais'],a:0,level:'A1'},
+    {q:'Je ne trouve pas mes clés, je ________ ai pourtant posées sur la table.',options:['les','leur','lui','en'],a:0,level:'A2'},
+    {q:'Si j\'avais su, je ________ plus tôt.',options:['serais venu','viendrais','suis venu','étais venu'],a:0,level:'B1'},
+    {q:'Bien que ce test ________ difficile, je vais réussir.',options:['soit','est','sera','était'],a:0,level:'B2'},
+    {q:'Il faut que vous ________ votre dossier avant demain.',options:['fassiez','faites','ferez','fassions'],a:0,level:'B2'},
+    {q:'Il s\'est agi ________ régler ce problème.',options:['de','à','par','pour'],a:0,level:'C1'},
+    {q:'Ce candidat a réussi l\'examen ________ (facilement).',options:['haut la main','à bras ouverts','au pied de la lettre','de bouche à oreille'],a:0,level:'C1'},
+    {q:'Quoi que vous ________, restez concentré.',options:['disiez','dites','direz','disant'],a:0,level:'C2'},
+    {q:'Je doute qu\'il ________ la vérité.',options:['sache','sait','saura','sachant'],a:0,level:'C2'},
+    {q:'À peine était-il arrivé ________ le téléphone sonna.',options:['que','quand','lorsque','si'],a:0,level:'C2'},
+  ]},
+  en:{title:'English Program',flag:'🇬🇧',speechLang:'en-US',oral:'Describe a significant challenge you have faced and explain how you overcame it.',questions:[
+    {q:'Every day, I ________ to the TFG Institute.',options:['go','goes','going','went'],a:0,level:'A1'},
+    {q:'Where ________ you live?',options:['do','does','are','is'],a:0,level:'A1'},
+    {q:'I ________ a great movie last night.',options:['watched','watch','have watched','am watching'],a:0,level:'A2'},
+    {q:'I look forward to ________ you soon.',options:['meeting','meet','met','meets'],a:0,level:'B1'},
+    {q:'If I ________ rich, I would travel the world.',options:['were','am','was','will be'],a:0,level:'B1'},
+    {q:'She has been working here ________ 2020.',options:['since','for','during','ago'],a:0,level:'B2'},
+    {q:'You ________ better finish your homework now.',options:['had','would','should','must'],a:0,level:'B2'},
+    {q:'Hardly ________ I left the house when it started raining.',options:['had','did','have','was'],a:0,level:'C1'},
+    {q:'I\'d rather you ________ tell anyone about this.',options:['didn\'t','don\'t','not','haven\'t'],a:0,level:'C1'},
+    {q:'The boss suggested ________ the meeting until Friday.',options:['postponing','to postpone','postpone','postponed'],a:0,level:'C2'},
+  ]},
+  de:{title:'Deutsch Kurs',flag:'🇩🇪',speechLang:'de-DE',oral:'Stellen Sie sich vor und erläutern Sie, warum Sie Deutsch lernen.',questions:[
+    {q:'Wie ________ du?',options:['heißt','heiße','heißen','heißen wir'],a:0,level:'A1'},
+    {q:'Ich komme ________ Kamerun.',options:['aus','von','in','nach'],a:0,level:'A1'},
+    {q:'Ich gehe jetzt ________ Hause.',options:['nach','zu','in','an'],a:0,level:'A2'},
+    {q:'Ich habe das Buch ________.',options:['gelesen','gelest','lesen','lese'],a:0,level:'B1'},
+    {q:'Wenn ich Zeit ________, würde ich kommen.',options:['hätte','habe','hatte','hast'],a:0,level:'B1'},
+    {q:'Er arbeitet, ________ Geld zu verdienen.',options:['um','für','damit','ohne'],a:0,level:'B2'},
+    {q:'Je mehr ich lerne, ________ besser werde ich.',options:['desto','umso mehr','je','als'],a:0,level:'B2'},
+    {q:'Er behauptete, er ________ die Unterlagen nicht erhalten.',options:['habe','hat','hatte','hätte'],a:0,level:'C1'},
+    {q:'Der Zeuge, ________ Aussage entscheidend war, blieb anonym.',options:['dessen','deren','dem','des'],a:0,level:'C1'},
+    {q:'Sie tat so, als ob sie nichts ________.',options:['wüsste','weiß','gewusst hat','wissen würde'],a:0,level:'C2'},
+  ]},
+  es:{title:'Español',flag:'🇪🇸',speechLang:'es-ES',oral:'Presentate y explica cuales son tus metas profesionales.',questions:[
+    {q:'Hola, yo ________ Juan.',options:['soy','estoy','ser','siendo'],a:0,level:'A1'},
+    {q:'Todos los dias, yo ________ al instituto TFG.',options:['voy','vaya','fui','iba'],a:0,level:'A1'},
+    {q:'Ayer ________ una pelicula muy interesante.',options:['vi','veo','veia','haya visto'],a:0,level:'A2'},
+    {q:'Cuando ________ el informe, enviamelo.',options:['termines','terminaras','terminas','terminas ya'],a:0,level:'B1'},
+    {q:'Si tuviera mas tiempo, ________ mas.',options:['estudiaría','estudia','estudie','estudiara'],a:0,level:'B1'},
+    {q:'Es imprescindible que todos ________ los requisitos.',options:['cumplan','cumplen','cumpliran','cumplieran'],a:0,level:'B2'},
+    {q:'El director ordeno que se ________ el proyecto.',options:['cancelara','cancele','ha cancelado','cancelaba'],a:0,level:'B2'},
+    {q:'Si hubiera sabido la verdad, no ________ asi.',options:['habría actuado','actuaria','hubiera actuado','actuara'],a:0,level:'C1'},
+    {q:'Para cuando llegues, nosotros ya ________ terminado.',options:['habremos','hayamos','hubieramos','habriamos'],a:0,level:'C1'},
+    {q:'Es como si el tiempo ________ detenido.',options:['se hubiera','se haya','se habia','se habra'],a:0,level:'C2'},
+  ]},
+  it:{title:'Lingua Italiana',flag:'🇮🇹',speechLang:'it-IT',oral:'Presentati e spiega perché hai scelto di imparare l\'italiano.',questions:[
+    {q:'Come ________ chiami?',options:['ti','mi','si','ci'],a:0,level:'A1'},
+    {q:'Oggi ________ un bel sole a Yaoundé.',options:["c'è",'è','ci sono','fa'],a:0,level:'A1'},
+    {q:'Ieri ________ al centro linguistico.',options:['sono andato','ho andato','vado','andavo'],a:0,level:'A2'},
+    {q:"Hai mangiato la pizza? Si, ________ mangiata.",options:["l'ho","la ho","le ho","lo ho"],a:0,level:'B1'},
+    {q:'Spero che tu ________ bene.',options:['stia','stai','stessi','starai'],a:0,level:'B1'},
+    {q:'Se ________ piu tempo, studierei di piu.',options:['avessi','ho','avevo','avrei'],a:0,level:'B2'},
+    {q:'Penso che loro ________ gia partiti.',options:['siano','sono','siano stati','fossero'],a:0,level:'B2'},
+    {q:'Nonostante ________ stanco, ho continuato.',options:['fosse','era','è','sia'],a:0,level:'C1'},
+    {q:'A meno che non ________ un miracolo, perderemo.',options:['accada','accade','accadesse','accadra'],a:0,level:'C1'},
+    {q:'Chiunque ________ questo, deve rispondere.',options:['abbia fatto','ha fatto','faccia','avesse fatto'],a:0,level:'C2'},
+  ]},
+  ru:{title:'Русский язык',flag:'🇷🇺',speechLang:'ru-RU',oral:'Расскажите о себе и почему вы решили изучать русский язык.',questions:[
+    {q:'Меня ________ Иван.',options:['зовут','зову','зовёт','зовём'],a:0,level:'A1'},
+    {q:'Я ________ из Камеруна.',options:['из','от','в','на'],a:0,level:'A1'},
+    {q:'Вчера я ________ в кино.',options:['ходил','хожу','пойду','иду'],a:0,level:'A2'},
+    {q:'Я не мог понять, о чём ________ в этой книге.',options:['говорилось','говорится','говорить','говорило'],a:0,level:'B1'},
+    {q:'Если бы ты ________ раньше, мы бы не опоздали.',options:['предупредил','предупреждал','предупредишь','предупреждаешь'],a:0,level:'B1'},
+    {q:'Задание ________ выполнено в срок.',options:['было','есть','будет','являлось'],a:0,level:'B2'},
+    {q:'Книга, ________ на столе, принадлежит директору.',options:['лежащая','лежавшая','лежа','лежать'],a:0,level:'B2'},
+    {q:'________ бы он ни говорил, мы не изменим решение.',options:['Что','Как','Где','Когда'],a:0,level:'C1'},
+    {q:'Студент, ________ лучшую работу, получит премию.',options:['написавший','написав','пишущий','написанный'],a:0,level:'C1'},
+    {q:'Он говорит так, будто ________ всё на свете.',options:['знает','знал','знает бы','знал бы'],a:0,level:'C2'},
+  ]},
+  zh:{title:'中文课程',flag:'🇨🇳',speechLang:'zh-CN',oral:'请介绍一下你自己，谈谈你为什么选择学习中文。',questions:[
+    {q:'你好！我________ 李明。',options:['叫 (jiào)','是 (shì)','有 (yǒu)','在 (zài)'],a:0,level:'A1'},
+    {q:'我________ 中国人。',options:['是 (shì)','有 (yǒu)','叫 (jiào)','在 (zài)'],a:0,level:'A1'},
+    {q:'昨天我________ 了一本书。',options:['看 (kàn)','看了','看过','在看'],a:1,level:'A2'},
+    {q:'你学中文学________(le)多长时间了？',options:['了 (le)','过 (guò)','着 (zhe)','的 (de)'],a:0,level:'B1'},
+    {q:'他高兴________(de)跳起来了。',options:['得 (de)','的 (de)','地 (de)','了 (le)'],a:0,level:'B1'},
+    {q:'他把那本书________(kan wan)了。',options:['看完','看了','看过','在看'],a:0,level:'B2'},
+    {q:'只有努力学习，________(cai)能取得好成绩。',options:['才 (cái)','就 (jiù)','都 (dou)','也 (ye)'],a:0,level:'B2'},
+    {q:'这件事________(you)他来处理最合适。',options:['由 (yóu)','被 (bèi)','让 (ràng)','把 (ba)'],a:0,level:'C1'},
+    {q:'这本书值得________(yi du)。',options:['一读','读一读','去读','读了'],a:0,level:'C1'},
+    {q:'这个成语"一石二鸟"的意思最接近________。',options:['一举两得','马到成功','半途而废','事半功倍'],a:0,level:'C2'},
+  ]},
+};
+const QUIZ={};Object.entries(RAW).forEach(([k,v])=>{QUIZ[k]={...v,questions:shuffleOptions(v.questions)};});
+
+let state={lang:null,qIndex:0,answers:[],selected:null,firstName:'',lastName:'',city:'',phone:'',mediaRecorder:null,chunks:[],audioBlob:null,audioURL:null,recInterval:null,recSec:0};
+
+function getCECRL(s){if(s<=2)return'A1';if(s<=4)return'A2';if(s<=6)return'B1';if(s<=7)return'B2';if(s<=9)return'C1';return'C2';}
+function getScore(s){const p=s/10;if(p===1)return{e:'🏆',t:'Exceptionnel !',m:'Score parfait ! Niveau C2 confirmé.'};if(p>=.8)return{e:'⭐',t:'Excellent !',m:'Très bon niveau C1. Programme avancé TFG recommandé.'};if(p>=.6)return{e:'📚',t:'Bon niveau !',m:'Niveau B2 solide. TFG vous accompagne vers la certification.'};if(p>=.4)return{e:'🌱',t:'En progression',m:'Niveau B1. Nos cours intensifs vous propulseront.'};if(p>=.2)return{e:'📖',t:'Niveau débutant',m:'Niveau A2. Nos formateurs partent de vos bases.'};return{e:'💡',t:'Grand débutant !',m:'Niveau A1. TFG vous accompagne depuis zéro !'};}
+function waUrl(t,s,n){return'https://wa.me/237674373396?text='+encodeURIComponent('Bonjour TFG ! 👋\n\n'+n+' vient de terminer le test de '+t+'.\nScore : '+s+'/10\nNiveau : '+getCECRL(s)+'\n\nJe souhaite m\'inscrire !');}
+function fullName(){return(state.firstName+' '+state.lastName).trim()||'Candidat(e)';}
+
+function startTest(lang){state.lang=lang;document.getElementById('reg-lang-label').textContent=QUIZ[lang].flag+' '+QUIZ[lang].title;showPage('register');}
+function submitRegister(){
+  state.firstName=document.getElementById('inp-first').value.trim();
+  state.lastName=document.getElementById('inp-last').value.trim();
+  state.city=document.getElementById('inp-city').value.trim();
+  state.phone=document.getElementById('inp-phone').value.trim();
+  if(!state.firstName||!state.lastName){document.getElementById('form-err').style.display='block';return;}
+  document.getElementById('form-err').style.display='none';
+  // ── AUTO-ENREGISTREMENT DANS ADMIN ──
+  const today=new Date().toLocaleDateString('fr-FR');
+  const now=new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
+  const lang=QUIZ[state.lang]?QUIZ[state.lang].flag+' '+QUIZ[state.lang].title:'Test';
+  const autoEntry={id:boNextId++,prenom:state.firstName,nom:state.lastName,tel:state.phone||'—',email:'—',lang:lang,ville:state.city||'Yaoundé',message:'Inscrit via Test Gratuit',statut:'Test en cours',date:today+' '+now};
+  inscriptions.unshift(autoEntry);saveInscriptions();
+  state.testEntryId=autoEntry.id;
+  // ─────────────────────────────────────
+  state.qIndex=0;state.answers=[];state.selected=null;
+  renderQuestion();showPage('quiz');
+}
+function renderQuestion(){
+  const d=QUIZ[state.lang];const q=d.questions[state.qIndex];
+  document.getElementById('quiz-lang-label').textContent=d.flag+' '+d.title;
+  document.getElementById('prog-text').textContent=(state.qIndex+1)+' / '+d.questions.length;
+  document.getElementById('prog-fill').style.width=((state.qIndex+1)/d.questions.length*100)+'%';
+  const c=LEVEL_COLORS[q.level]||'#D4AF37';
+  const badge=document.getElementById('lvl-badge');
+  badge.textContent='Niveau '+q.level;badge.style.background=c+'18';badge.style.border='1px solid '+c+'38';badge.style.color=c;
+  // Mettre à jour indicateur compétences
+  const compMap={'A1':'ce','A2':'ce','B1':'ee','B2':'ee','C1':'eo','C2':'co'};
+  const activeComp=compMap[q.level]||'ce';
+  const compLabels={ce:'📖 Compréhension Écrite',ee:'✍️ Expression Écrite',eo:'🎙 Expression Orale',co:'🔊 Compréhension Orale'};
+  ['ce','ee','eo','co'].forEach(id=>{
+    const el=document.getElementById('comp-'+id);if(!el)return;
+    if(id===activeComp){el.style.background='rgba(212,175,55,.15)';el.style.border='1px solid rgba(212,175,55,.5)';el.style.color='var(--gold)';}
+    else{el.style.background='rgba(255,255,255,.04)';el.style.border='1px solid rgba(255,255,255,.08)';el.style.color='rgba(255,255,255,.35)';}
+  });
+  const parts=q.q.split('________');
+  document.getElementById('q-text').innerHTML=parts.map((p,i)=>i<parts.length-1?p+'<em>&nbsp;________&nbsp;</em>':p).join('');
+  document.getElementById('opts').innerHTML=q.options.map((opt,i)=>`<button class="opt" onclick="selectOpt(${i})" id="opt-${i}"><span class="opt-letter">${String.fromCharCode(65+i)}</span>${opt}</button>`).join('');
+  document.getElementById('feedback').className='hidden';
+  document.getElementById('next-btn').className='next-btn hidden';
+  state.selected=null;
+}
+function selectOpt(idx){
+  if(state.selected!==null)return;
+  state.selected=idx;
+  const q=QUIZ[state.lang].questions[state.qIndex];
+  state.answers.push(idx===q.a);
+  for(let i=0;i<q.options.length;i++){const b=document.getElementById('opt-'+i);if(i===q.a)b.className='opt cor';else if(i===idx)b.className='opt wrg';b.disabled=true;}
+  const fb=document.getElementById('feedback');
+  fb.className='feedback '+(idx===q.a?'cor':'wrg');
+  fb.innerHTML=idx===q.a?'✓ Bonne réponse !':'✗ Réponse : <strong>'+q.options[q.a]+'</strong>';
+  const nb=document.getElementById('next-btn');nb.className='next-btn';
+  nb.textContent=state.qIndex+1>=QUIZ[state.lang].questions.length?'🎙 Passer à l\'épreuve orale':'Question suivante →';
+}
+function nextQuestion(){
+  state.qIndex++;
+  if(state.qIndex>=QUIZ[state.lang].questions.length){
+    const score=state.answers.filter(Boolean).length;
+    document.getElementById('oral-score').textContent=score;
+    document.getElementById('oral-lang-label').textContent=QUIZ[state.lang].flag+' '+QUIZ[state.lang].title+' · ~2 minutes';
+    document.getElementById('oral-subject').textContent='"'+QUIZ[state.lang].oral+'"';
+    document.getElementById('wa-oral-btn').href=waUrl(QUIZ[state.lang].title,score,fullName());
+    document.getElementById('rec-waves').classList.add('hidden');
+    document.getElementById('rec-timer').classList.add('hidden');
+    document.getElementById('rec-audio').style.display='none';
+    document.getElementById('rec-ready').style.display='none';
+    document.getElementById('rec-btns').innerHTML='<button class="rec-btn start" onclick="startRec()">🎙 Démarrer</button>';
+    document.getElementById('your-turn').classList.add('hidden');
+    document.getElementById('audio-btn').textContent='🔊 Écouter le sujet';
+    showPage('oral');
+  }else{renderQuestion();}
+}
+function listenSubject(){
+  if('speechSynthesis' in window){
+    speechSynthesis.cancel();
+    const d=QUIZ[state.lang];const u=new SpeechSynthesisUtterance(d.oral);u.lang=d.speechLang;u.rate=0.88;
+    u.onstart=()=>document.getElementById('audio-btn').textContent='🔊 Lecture en cours...';
+    u.onend=u.onerror=()=>{document.getElementById('audio-btn').textContent='🔊 Réécouter';document.getElementById('your-turn').classList.remove('hidden');};
+    speechSynthesis.speak(u);
+  }else{document.getElementById('your-turn').classList.remove('hidden');}
+}
+async function startRec(){
+  try{
+    const stream=await navigator.mediaDevices.getUserMedia({audio:true});
+    state.mediaRecorder=new MediaRecorder(stream);state.chunks=[];
+    state.mediaRecorder.ondataavailable=e=>{if(e.data.size>0)state.chunks.push(e.data);};
+    state.mediaRecorder.onstop=()=>{
+      const blob=new Blob(state.chunks,{type:'audio/webm'});
+      state.audioBlob=blob;state.audioURL=URL.createObjectURL(blob);
+      const a=document.getElementById('rec-audio');a.src=state.audioURL;a.style.display='block';
+      document.getElementById('rec-ready').style.display='block';
+      document.getElementById('rec-waves').classList.add('hidden');
+      document.getElementById('rec-timer').classList.add('hidden');
+      document.getElementById('rec-btns').innerHTML='<button class="rec-btn play" onclick="new Audio(\''+state.audioURL+'\').play()">▶ Réécouter</button><button class="rec-btn del" onclick="deleteRec()">🗑 Refaire</button>';
+      stream.getTracks().forEach(t=>t.stop());
+    };
+    state.mediaRecorder.start();state.recSec=0;
+    document.getElementById('rec-waves').classList.remove('hidden');
+    document.getElementById('rec-timer').classList.remove('hidden');
+    document.getElementById('rec-timer').textContent='00:00';
+    state.recInterval=setInterval(()=>{state.recSec++;const m=Math.floor(state.recSec/60),s=state.recSec%60;document.getElementById('rec-timer').textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;},1000);
+    document.getElementById('rec-btns').innerHTML='<button class="rec-btn stop" onclick="stopRec()">⬛ Arrêter</button>';
+  }catch(e){alert('Veuillez autoriser le microphone.');}
+}
+function stopRec(){state.mediaRecorder.stop();clearInterval(state.recInterval);}
+function deleteRec(){state.audioBlob=null;state.audioURL=null;document.getElementById('rec-audio').style.display='none';document.getElementById('rec-ready').style.display='none';document.getElementById('rec-btns').innerHTML='<button class="rec-btn start" onclick="startRec()">🎙 Démarrer</button>';}
+
+function buildResults(){
+  // Mettre à jour statut de l'entrée admin
+  if(state.testEntryId){
+    const r=inscriptions.find(x=>x.id===state.testEntryId);
+    if(r){
+      const score=state.answers.filter(Boolean).length;
+      r.statut='Test terminé';
+      r.message='Test '+QUIZ[state.lang].title+' — Score: '+score+'/10 — Niveau: '+getCECRL(score);
+      saveInscriptions();
+    }
+  }
+  const score=state.answers.filter(Boolean).length;const ri=getScore(score);
+  document.getElementById('res-emoji').textContent=ri.e;
+  document.getElementById('res-score').textContent=score;
+  document.getElementById('res-title').textContent=ri.t;
+  document.getElementById('res-msg').textContent=ri.m;
+  document.getElementById('wa-results-btn').href=waUrl(QUIZ[state.lang].title,score,fullName());
+  const d=QUIZ[state.lang];let html='';
+  ['A1','A2','B1','B2','C1','C2'].forEach(lvl=>{
+    const qs=d.questions.map((q,i)=>({q,ans:state.answers[i]})).filter(x=>x.q.level===lvl);
+    if(!qs.length)return;const c=qs.filter(x=>x.ans).length;const t=qs.length;const col=LEVEL_COLORS[lvl]||'#D4AF37';
+    html+=`<div class="sbar-row"><span class="sbar-lbl" style="color:${col}">${lvl}</span><div class="sbar-track"><div class="sbar-fill" style="width:${c/t*100}%;background:${col}"></div></div><span class="sbar-cnt" style="color:rgba(255,255,255,.4);font-size:.67rem;width:20px">${c}/${t}</span></div>`;
+  });
+  document.getElementById('sbars').innerHTML=html;
+}
+function buildCertificate(){
+  const score=state.answers.filter(Boolean).length;const cecrl=getCECRL(score);const d=QUIZ[state.lang];
+  const today=new Date().toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'});
+  document.getElementById('cert-name').textContent=fullName();
+  document.getElementById('cert-city').textContent=state.city;
+  document.getElementById('cert-lang').textContent=d.flag+' '+d.title;
+  document.getElementById('cert-score').textContent=score+'/10';
+  document.getElementById('cert-date').textContent=today;
+  const cl=document.getElementById('cert-lvl');const c=LEVEL_COLORS[cecrl]||'#D4AF37';
+  cl.textContent=cecrl;cl.style.background=c+'22';cl.style.border='1px solid '+c+'55';cl.style.color=c;
+  document.getElementById('wa-cert-btn').href=waUrl(d.title,score,fullName());
+}
+function resetAll(){
+  state={lang:null,qIndex:0,answers:[],selected:null,firstName:null,lastName:'',city:'',phone:'',mediaRecorder:null,chunks:[],audioBlob:null,audioURL:null,recInterval:null,recSec:0};
+  showPage('landing');
+}
+
+// SLIDER
+let slideIdx=0;const TOTAL_SLIDES=7;
+function moveSlide(d){slideIdx=(slideIdx+d+TOTAL_SLIDES)%TOTAL_SLIDES;updateSlider();}
+function goSlide(i){slideIdx=i;updateSlider();}
+function updateSlider(){
+  document.getElementById('slider-track').style.transform='translateX(-'+slideIdx*100+'%)';
+  document.querySelectorAll('.sdot').forEach((d,i)=>d.className='sdot'+(i===slideIdx?' on':''));
+}
+
+// FAQ TOGGLE
+function toggleFaq(el){el.classList.toggle('open');}
+
+// COUNTDOWN
+function updateCountdown(){
+  const target=new Date('2026-03-29T08:00:00'),diff=target-Date.now();
+  if(diff<=0){return;}
+  const pad=n=>String(n).padStart(2,'0');
+  const j=Math.floor(diff/86400000),h=Math.floor((diff%86400000)/3600000),m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);
+  ['j','h','m','s'].forEach((id,i)=>{const el=document.getElementById('cd-'+id);if(el)el.textContent=pad([j,h,m,s][i]);});
+}
+updateCountdown();setInterval(updateCountdown,1000);
+
+// LIVE COUNTER
+let liveCount=7;
+function updateLiveCounter(){
+  liveCount=Math.max(4,Math.min(18,liveCount+(Math.random()>.5?1:-1)));
+  const el=document.getElementById('live-counter-num');
+  if(el)el.textContent=liveCount;
+}
+setTimeout(()=>{updateLiveCounter();setInterval(updateLiveCounter,9000);},3000);
+
+// SOCIAL PROOF
+const SP_NAMES=['Junior','Carine','Cédric','Marc','Aïcha','Stéphane','Léa','Rodrigue','Béatrice',
+'Armand','Blanche','Calvin','Denise','Éric','Fatou','Gaëlle','Hermann','Irène','Jacques',
+'Karine','Lionel','Mireille','Narcisse','Ornella','Patrick','Quinta','Rachel','Samuel','Tatiana',
+'Ulrich','Vanessa','William','Xandrine','Yves','Zoé','Alphonse','Brigitte','Christophe','Diane',
+'Emmanuel','Floriane','Gervais','Honorine','Innocent','Joëlle','Kevin','Laurence','Maurice','Nathalie',
+'Olivier','Pascaline','Quentin','Rose','Sylvain','Thérèse','Urbain','Véronique','Walter','Xénia',
+'Yannick','Zita','Adèle','Boris','Clarisse','Donatien','Elvire','Franck','Gisèle','Hubert',
+'Isabelle','Joël','Khalid','Lucie','Médard','Nicole','Oscar','Prudence','Raïssa','Serge',
+'Tania','Ursule','Valère','Wendy','Yolande','Zacharie','Abel','Blandine','Constant','Danielle',
+'Edmond','Félicité','Grégoire','Hortense','Idriss','Josiane','Karl','Laure','Modeste','Nadège'];
+const SP_QTRS=['Bastos','Mendong','Odza','Nkol-Eton','Tsinga','Mvan','Biyem-Assi','Ngousso','Messassi'];
+const SP_ACTS=[
+  'vient de réussir son test TCF Canada (Niveau B2) ! 🇨🇦',
+  "a réservé sa place pour la session d'Anglais du 29 Mars ! 🇬🇧",
+  'vient de terminer son diagnostic d\'Allemand (Niveau A2) ! 🇩🇪',
+  "s'est inscrit au programme d'immigration pour la France ! 🇫🇷",
+  'vient d\'obtenir son certificat provisoire TFG ! 🎓',
+  'est actuellement en ligne pour tester son niveau.'
+];
+function spRand(a){return a[Math.floor(Math.random()*a.length)];}
+let spTimer;
+function spShow(){
+  const el=document.getElementById('sp-notif');if(!el)return;
+  document.getElementById('sp-label').textContent='TFG · '+spRand(SP_QTRS);
+  document.getElementById('sp-text').innerHTML='<strong>'+spRand(SP_NAMES)+'</strong> '+spRand(SP_ACTS);
+  const pb=document.getElementById('sp-bar');
+  pb.style.animation='none';void pb.offsetWidth;pb.style.animation='sp-prog 6s linear forwards';
+  el.classList.remove('sp-hidden');el.classList.add('sp-visible');
+  clearTimeout(spTimer);
+  spTimer=setTimeout(()=>{el.classList.remove('sp-visible');el.classList.add('sp-hidden');},6000);
+}
+function spClose(){
+  const el=document.getElementById('sp-notif');
+  clearTimeout(spTimer);
+  el.classList.remove('sp-visible');el.classList.add('sp-hidden');
+}
+setTimeout(()=>{spShow();setInterval(spShow,12000);},2500);
+
+// EXIT INTENT
+let exitShown=false;
+document.addEventListener('mouseleave',function(e){
+  if(!exitShown&&e.clientY<10){exitShown=true;document.getElementById('exit-popup').style.display='flex';}
+});
+
+// SEO SCHEMA.ORG
+(function(){
+  const org={"@context":"https://schema.org","@type":"EducationalOrganization","name":"TFG International Institute Language","url":"https://tfg-institute.netlify.app","description":"Centre de langues certifié à Yaoundé depuis 2014. TCF Canada, DELF, IELTS, Goethe. Immigration Canada, France, Allemagne.","address":{"@type":"PostalAddress","addressLocality":"Yaoundé","addressCountry":"CM","streetAddress":"Nkolfulou"},"telephone":"+237674373396","foundingDate":"2014","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"127","bestRating":"5"}};
+  const faq={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Comment s'inscrire au TCF Canada à Yaoundé ?","acceptedAnswer":{"@type":"Answer","text":"TFG propose des préparations complètes au TCF Canada. Contactez-nous via WhatsApp au +237 674 373 396."}},
+    {"@type":"Question","name":"Quel est le prix des formations TFG ?","acceptedAnswer":{"@type":"Answer","text":"Français/Anglais à partir de 25 000 FCFA/niveau, Espagnol 65 000 FCFA, Allemand 85 000 FCFA, Russe et Chinois 120 000 FCFA."}},
+    {"@type":"Question","name":"TFG propose-t-il des cours en ligne ?","acceptedAnswer":{"@type":"Answer","text":"Oui, cours hybrides via Zoom ou WhatsApp, 7 jours sur 7."}},
+    {"@type":"Question","name":"Quelles langues sont enseignées au TFG ?","acceptedAnswer":{"@type":"Answer","text":"7 langues : Français, Anglais, Allemand, Espagnol, Italien, Russe, Chinois."}}
+  ]};
+  [org,faq].forEach(s=>{const sc=document.createElement('script');sc.type='application/ld+json';sc.textContent=JSON.stringify(s);document.head.appendChild(sc);});
+  document.title='TFG International Institute — TCF Canada, DELF, IELTS à Yaoundé | Centre de Langues Cameroun';
+  const meta=[['name','description','Centre de langues certifié à Yaoundé depuis 2014. Préparation TCF Canada, DELF, IELTS, Goethe. Immigration France, Allemagne, Canada. 500+ étudiants certifiés.'],['name','keywords','TCF Canada Yaoundé, DELF Yaoundé, IELTS Cameroun, cours langue Yaoundé, immigration Canada Cameroun, Goethe Yaoundé, TFG Institute'],['property','og:title','TFG International Institute — TCF Canada, DELF, IELTS à Yaoundé'],['property','og:description','500+ étudiants certifiés depuis 2014. TCF, DELF, IELTS, Goethe. Immigration Canada, France, Allemagne.'],['property','og:type','website'],['property','og:url','https://tfg-institute.netlify.app'],['name','twitter:card','summary_large_image']];
+  meta.forEach(([attr,n,c])=>{let el=document.querySelector('meta['+attr+'="'+n+'"]');if(!el){el=document.createElement('meta');el.setAttribute(attr,n);document.head.appendChild(el);}el.setAttribute('content',c);});
+})();
+
+</script>
+
+<!-- ===== FIXED FLOATING WIDGETS — outside .app for correct position:fixed ===== -->
+
+<!-- SOCIAL PROOF LIVE FEED -->
+<div id="sp-notif">
+  <div style="background:#001533;border:1.5px solid #D4AF37;border-radius:12px;padding:12px 14px;display:flex;align-items:flex-start;gap:10px;box-shadow:0 8px 28px rgba(0,0,0,.5)">
+    <div style="flex-shrink:0;width:34px;height:34px;border-radius:50%;background:rgba(212,175,55,.13);border:1px solid #D4AF37;display:flex;align-items:center;justify-content:center">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+    </div>
+    <div style="flex:1;min-width:0">
+      <p id="sp-label" style="margin:0 0 2px;font-size:.62rem;color:#D4AF37;font-weight:700;letter-spacing:.07em;text-transform:uppercase">TFG Institute · Yaoundé</p>
+      <p id="sp-text" style="margin:0;font-size:.78rem;color:#fff;line-height:1.5">Initialisation...</p>
+    </div>
+    <button onclick="spClose()" style="flex-shrink:0;background:transparent;border:none;color:rgba(255,255,255,.35);cursor:pointer;font-size:1.1rem;line-height:1;padding:0 2px">×</button>
+  </div>
+  <div style="height:2px;background:rgba(212,175,55,.15);border-radius:0 0 12px 12px;overflow:hidden">
+    <div id="sp-bar" style="height:100%;background:#D4AF37;width:100%"></div>
+  </div>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a id="wa-float" href="https://wa.me/237674373396?text=Bonjour%20TFG%20!" target="_blank" title="WhatsApp TFG Institute">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.522 5.852L.057 23.62a.75.75 0 00.92.92l5.875-1.453A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.895 0-3.67-.516-5.19-1.415l-.37-.22-3.838.95.968-3.74-.242-.386A9.937 9.937 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<!-- EXIT INTENT -->
+<div id="exit-popup" onclick="this.style.display='none'">
+  <div onclick="event.stopPropagation()" style="background:#001533;border:2px solid #D4AF37;border-radius:16px;padding:34px 26px;max-width:420px;width:100%;text-align:center;position:relative">
+    <button onclick="document.getElementById('exit-popup').style.display='none'" style="position:absolute;top:12px;right:14px;background:transparent;border:none;color:rgba(255,255,255,.35);cursor:po
+    </div>
+  </div>
+</div>
+
+
+<script>
+var CDATA={
+  fr:{n:'Francais TCF/DELF',c:'TCF - DELF - DALF',p:25000,s:6,pays:'Canada - France - Belgique - Suisse'},
+  en:{n:'Anglais IELTS/TOEFL',c:'IELTS - TOEFL - Cambridge',p:30000,s:6,pays:'UK - USA - Canada - Australie'},
+  de:{n:'Allemand Goethe',c:'Goethe-Zertifikat A1-C2',p:85000,s:12,pays:'Allemagne - Autriche - Suisse'},
+  es:{n:'Espagnol DELE',c:'DELE A1-C2',p:65000,s:6,pays:'Espagne - Mexique - Amerique latine'},
+  it:{n:'Italien CILS',c:'CILS - CELI A1-C2',p:70000,s:6,pays:'Italie'},
+  ru:{n:'Russe TORFL',c:'TORFL - TRKI 1-4',p:120000,s:12,pays:'Russie'},
+  zh:{n:'Chinois HSK',c:'HSK 1-4',p:120000,s:10,pays:'Chine'}
+};
+var NL=['A1','A2','B1','B2','C1','C2'];
+function calcUp(){
+  var lang=document.getElementById('cl-lang').value;
+  var from=document.getElementById('cl-from').value;
+  var to=document.getElementById('cl-to').value;
+  var res=document.getElementById('cl-res');
+  var tot=document.getElementById('cl-tot');
+  var info=document.getElementById('cl-info');
+  var wa=document.getElementById('cl-wa');
+  if(!lang||from===''||to===''||parseInt(to)<=parseInt(from)){
+    res.className='calc-res';tot.className='calc-tot';info.className='calc-info';wa.style.display='none';
+    if(from!==''&&to!==''&&parseInt(to)<=parseInt(from)){
+      info.textContent='Attention : votre objectif doit etre superieur a votre niveau actuel.';
+      info.style.cssText='background:rgba(244,63,94,.07);border:1px solid rgba(244,63,94,.22);color:rgba(244,63,94,.9)';
+      info.className='calc-info on';
+    }
+    return;
+  }
+  var d=CDATA[lang];
+  var niv=parseInt(to)-parseInt(from);
+  var sem=niv*d.s;
+  var mois=Math.round(sem/4.33);
+  var prix=niv*d.p;
+  document.getElementById('cl-niv').textContent=niv+' niveau'+(niv>1?'x':'');
+  document.getElementById('cl-dur').textContent=sem+' semaines (~'+mois+' mois)';
+  document.getElementById('cl-pniv').textContent=d.p.toLocaleString('fr-FR')+' FCFA';
+  document.getElementById('cl-cert').textContent=d.c;
+  document.getElementById('cl-pays').textContent=d.pays;
+  document.getElementById('cl-price').textContent=prix.toLocaleString('fr-FR')+' FCFA';
+  document.getElementById('cl-psub').textContent=niv+' niv x '+d.p.toLocaleString('fr-FR')+' FCFA (hors inscription 10 000 FCFA)';
+  res.className='calc-res on';tot.className='calc-tot on';
+  var m='';
+  if(parseInt(to)===3)m='Le niveau B2 est requis pour le visa Canada et les universites francaises !';
+  else if(parseInt(to)===4)m='C1 ouvre les portes des grandes universites europeennes.';
+  else if(parseInt(to)===5)m='C2 = maitrise totale. Vous visez l excellence !';
+  else if(niv===1)m='Excellent ! Un seul niveau - vous pouvez commencer des la prochaine session.';
+  else if(niv>=4)m='Parcours ambitieux ! Nos formateurs vous accompagnent etape par etape.';
+  if(m){
+    info.textContent=m;
+    info.style.cssText='background:rgba(74,222,128,.07);border:1px solid rgba(74,222,128,.22);color:rgba(74,222,128,.9)';
+    info.className='calc-info on';
+  } else { info.className='calc-info'; }
+  var txt='Bonjour TFG ! Simulation parcours :\nLangue : '+d.n+'\nNiveau actuel : '+NL[parseInt(from)]+'\nObjectif : '+NL[parseInt(to)]+'\nDuree : '+sem+' semaines\nBudget : '+prix.toLocaleString('fr-FR')+' FCFA\n\nJe souhaite m inscrire !';
+  wa.href='https://wa.me/237674373396?text='+encodeURIComponent(txt);
+  wa.style.display='flex';
+}
+
+// ══════════════════════════════════════════════════════
+// MEGA JS — TFG International Institute
+// ══════════════════════════════════════════════════════
+
+// ── PAYMENT
+function selectPay(op){
+  document.getElementById('pay-mtn').classList.toggle('sel', op==='mtn');
+  document.getElementById('pay-orange').classList.toggle('sel', op==='orange');
+  document.getElementById('pay-steps').style.display='block';
+  document.getElementById('pay-mtn-steps').style.display = op==='mtn'?'block':'none';
+  document.getElementById('pay-orange-steps').style.display = op==='orange'?'block':'none';
+  var num = op==='mtn'?'237674373396':'237693510122';
+  var txt = op==='mtn'
+    ? 'Bonjour TFG ! Je viens d effectuer mon paiement MTN MoMo de 10 000 FCFA au 674 373 396. Voici mon recu :'
+    : 'Bonjour TFG ! Je viens d effectuer mon paiement Orange Money de 10 000 FCFA au 693 510 122. Voici mon recu :';
+  var btn = document.getElementById('pay-wa-btn');
+  btn.href = 'https://wa.me/'+num+'?text='+encodeURIComponent(txt);
+  btn.style.display = 'flex';
+}
+
+// ── BLOG
+var BLOG_CONTENT = [
+  {
+    title: 'TCF Canada Yaounde 2026 - Guide complet',
+    tag: 'TCF CANADA',
+    content: '<h3>Qu est-ce que le TCF Canada ?</h3>Le TCF Canada (Test de Connaissance du Francais) est un examen linguistique exige par Immigration, Refugies et Citoyennete Canada (IRCC) pour les dossiers d immigration. Il evalue 4 competences : comprehension orale, comprehension ecrite, expression ecrite et expression orale.<h3>Quel score faut-il obtenir ?</h3>Pour la plupart des programmes d immigration canadiens (Express Entry, PVT), vous avez besoin d un niveau B2 minimum, soit un score de 4 a 6 selon la competence. TFG vous prepare specifiquement a ces niveaux avec des simulations d examen officielles.<h3>Comment se preparer avec TFG ?</h3>Notre programme TCF Canada dure 6 semaines par niveau. Nos formateurs certifies vous preparent sur les 4 epreuves avec des corriges detailles. 95% de nos etudiants obtiennent leur score cible. Contactez-nous au +237 674 373 396 pour vous inscrire.'
+  },
+  {
+    title: 'Visa Canada depuis le Cameroun - Toutes les etapes',
+    tag: 'IMMIGRATION',
+    content: '<h3>Les etapes du visa Canada</h3>Le processus de visa Canada comporte plusieurs etapes : evaluation d eligibilite, preparation du dossier linguistique, soumission du profil Entree Express, obtention de la Confirmation de Residence Permanente.<h3>Le role de la langue</h3>Le francais ou l anglais est obligatoire. Un niveau B2 minimum au TCF ou IELTS est requis pour maximiser vos points CRS dans Entree Express. TFG vous accompagne de votre premier cours jusqu a votre certification.<h3>Combien de temps cela prend-il ?</h3>En moyenne 12 a 18 mois du debut de la preparation linguistique a l obtention du visa. Commencez votre formation TFG des aujourd hui pour respecter ce calendrier.'
+  },
+  {
+    title: 'Combien coute le DELF a Yaounde ? Prix et conseils 2026',
+    tag: 'DELF / DALF',
+    content: '<h3>Les frais du DELF au Cameroun</h3>Les frais d inscription au DELF dependent du niveau : DELF A1-A2 environ 80 000 FCFA, DELF B1-B2 environ 100 000 FCFA, DALF C1-C2 environ 130 000 FCFA. Ces frais couvrent l examen officiel aupres de l Institut Francais du Cameroun.<h3>Les frais de preparation TFG</h3>La preparation au DELF chez TFG coute 25 000 FCFA par niveau (6 semaines). Nous vous preparons systematiquement a passer votre examen officiel avec un taux de reussite de 95%.<h3>Nos conseils pour reussir</h3>Commencez au moins 3 mois avant la date d examen. Faites des simulations regulieres. Enregistrez-vous pour parler et corriger votre expression orale. TFG vous accompagne a chaque etape.'
+  }
+];
+var blogOpen = false;
+function openBlog(idx){
+  var b = BLOG_CONTENT[idx];
+  document.getElementById('blog-list').style.display='none';
+  var art = document.getElementById('blog-article');
+  document.getElementById('blog-article-content').innerHTML = '<h2 style="font-family:\'Cormorant Garamond\',serif;font-size:1.3rem;color:#fff;margin-bottom:14px">'+b.title+'</h2>'+b.content;
+  art.classList.add('open');
+  blogOpen = true;
+}
+function closeBlog(){
+  document.getElementById('blog-list').style.display='block';
+  document.getElementById('blog-article').classList.remove('open');
+  blogOpen = false;
+}
+function openYoutube(url){ window.open(url,'_blank'); }
+
+// ── B2B
+function submitB2B(){
+  var co = document.getElementById('b2b-company').value.trim();
+  var ct = document.getElementById('b2b-contact').value.trim();
+  var tel = document.getElementById('b2b-tel').value.trim();
+  if(!co||!ct||!tel){alert('Veuillez remplir : entreprise, contact et telephone.');return;}
+  var sz = document.getElementById('b2b-size').value;
+  var lg = document.getElementById('b2b-lang').value;
+  var txt = 'Bonjour TFG ! Demande de devis entreprise :\nEntreprise : '+co+'\nContact RH : '+ct+'\nTel : '+tel+'\nNombre employes : '+sz+'\nLangue : '+lg+'\n\nMerci de nous contacter.';
+  window.open('https://wa.me/237674373396?text='+encodeURIComponent(txt),'_blank');
+  document.getElementById('b2b-success').style.display='block';
+}
+
+// ── AFFILIATION
+function genAffCode(){
+  var n = document.getElementById('aff-name').value.trim();
+  if(!n){alert('Entrez votre prenom.');return;}
+  var code = 'TFG-'+n.toUpperCase().substring(0,3)+Math.floor(1000+Math.random()*9000);
+  document.getElementById('aff-code-display').textContent = code;
+  var txt = 'Bonjour ! Je vous recommande TFG International Institute a Yaounde. Utilisez mon code '+code+' pour avoir -5 000 FCFA sur votre inscription ! https://tfg-institute.netlify.app';
+  document.getElementById('aff-wa-share').href = 'https://wa.me/?text='+encodeURIComponent(txt);
+  document.getElementById('aff-result').style.display='block';
+}
+
+// ── VISA CHECKLIST
+var VISA_DATA = {
+  ca: [
+    'Passeport valide (min 6 mois apres la date d entree prevue)',
+    'Photos d identite format passeport (fond blanc)',
+    'Certificat de naissance traduit et legalise',
+    'Diplomes et releves de notes traduits en francais ou anglais',
+    'Preuves financieres (releves bancaires 3 derniers mois)',
+    'Lettre de motivation pour immigrer au Canada',
+    'Casier judiciaire vierge (apostille)',
+    'Attestation de travail ou d etudes actuelle',
+    'Certificat de langue : TCF Canada minimum B2 (TFG vous prepare)',
+    'Formulaire Express Entry rempli en ligne',
+    'Frais de dossier IRCC (environ 1 540 CAD)'
+  ],
+  fr: [
+    'Passeport valide (min 6 mois)',
+    'Photos d identite recentes',
+    'Certificat de naissance traduit et apostille',
+    'Diplomes reconnus par l Etat francais',
+    'Attestation de ressources financieres suffisantes',
+    'Assurance maladie internationale',
+    'Preuve de logement en France (attestation d accueil)',
+    'Lettre d admission universite ou employeur francais',
+    'Certificat de langue : DELF B2 ou TEF (TFG vous prepare)',
+    'Formulaire OFII rempli',
+    'Frais de visa France (environ 99 EUR)'
+  ],
+  de: [
+    'Passeport valide',
+    'Photos biometriques format allemand',
+    'Certificat de naissance avec apostille',
+    'Diplomes reconnus par l Allemagne (KMK)',
+    'Preuves financieres (compte bloque Sperrkonto ~11 000 EUR)',
+    'Assurance maladie valable en Allemagne',
+    'Lettre d admission d une universite allemande',
+    'Certificat de langue : Goethe-Zertifikat B2 minimum (TFG vous prepare)',
+    'Attestation de logement en Allemagne',
+    'Frais de visa Allemagne (environ 75 EUR)',
+    'Rendez-vous ambassade allemande a Yaounde'
+  ]
+};
+var visaChecked = {ca:{}, fr:{}, de:{}};
+var visaCurrent = 'ca';
+function showVisa(country){
+  visaCurrent = country;
+  document.querySelectorAll('.visa-tab-btn').forEach(function(b,i){
+    b.classList.toggle('act', ['ca','fr','de'][i]===country);
+  });
+  renderVisa();
+}
+function renderVisa(){
+  var items = VISA_DATA[visaCurrent];
+  var checked = visaChecked[visaCurrent];
+  var html = '';
+  items.forEach(function(item, i){
+    var done = checked[i] ? 'done' : '';
+    html += '<div class="visa-item"><div class="visa-check '+done+'" onclick="toggleVisa('+i+')"></div><div class="visa-text">'+item+'</div></div>';
+  });
+  document.getElementById('visa-list').innerHTML = html;
+  updateVisaProg();
+}
+function toggleVisa(i){
+  visaChecked[visaCurrent][i] = !visaChecked[visaCurrent][i];
+  localStorage.setItem('tfg_visa_'+visaCurrent, JSON.stringify(visaChecked[visaCurrent]));
+  renderVisa();
+}
+function updateVisaProg(){
+  var items = VISA_DATA[visaCurrent];
+  var checked = visaChecked[visaCurrent];
+  var done = Object.values(checked).filter(Boolean).length;
+  var pct = Math.round(done/items.length*100);
+  document.getElementById('visa-prog').style.width = pct+'%';
+  document.getElementById('visa-prog-txt').textContent = done+' document'+(done>1?'s':'')+' pret'+(done>1?'s':'')+' sur '+items.length+' ('+pct+'%)';
+}
+function loadVisaState(){
+  ['ca','fr','de'].forEach(function(c){
+    var saved = localStorage.getItem('tfg_visa_'+c);
+    if(saved) try{ visaChecked[c]=JSON.parse(saved); }catch(e){}
+  });
+}
+loadVisaState();
+renderVisa();
+
+// ── PARTAGE CERTIFICAT
+function shareCertWA(){
+  var name = document.getElementById('cert-name')?document.getElementById('cert-name').textContent:'';
+  var lang = document.getElementById('cert-lang')?document.getElementById('cert-lang').textContent:'';
+  var score = document.getElementById('cert-score')?document.getElementById('cert-score').textContent:'';
+  var lvl = document.getElementById('cert-lvl')?document.getElementById('cert-lvl').textContent:'';
+  var txt = 'Je viens d obtenir mon certificat TFG International Institute !\n\nNom : '+name+'\nLangue : '+lang+'\nScore : '+score+'\nNiveau : '+lvl+'\n\nMerci TFG ! https://tfg-institute.netlify.app';
+  window.open('https://wa.me/?text='+encodeURIComponent(txt),'_blank');
+}
+function shareCertFB(){
+  window.open('https://www.facebook.com/sharer/sharer.php?u=https://tfg-institute.netlify.app','_blank');
+}
+function downloadCert(){
+  alert('Pour telecharger votre certificat, faites une capture d ecran de la page. Sur mobile : bouton Volume- + Bouton Power simultanement.');
+}
+
+// ── ESPACE ETUDIANT
+var ETU_CODES = {'1234':'Demo','2024':'Jean','2025':'Marie','9999':'Admin'};
+function etuLogin(){
+  var prenom = document.getElementById('etu-prenom').value.trim();
+  var code = document.getElementById('etu-code').value.trim();
+  if(!prenom||!code){alert('Entrez votre prenom et votre code.');return;}
+  var stored = JSON.parse(localStorage.getItem('tfg_inscriptions')||'[]');
+  var found = stored.find(function(r){ return r.prenom.toLowerCase()===prenom.toLowerCase(); });
+  if(found || ETU_CODES[code]){
+    document.getElementById('etu-login-screen').style.display='none';
+    document.getElementById('etu-dashboard').style.display='block';
+    document.getElementById('etu-nom').textContent='Bienvenue, '+prenom+' !';
+    if(found){
+      document.getElementById('etu-lang-info').textContent = found.lang||'Test de niveau';
+      var score = found.message&&found.message.includes('Score:') ? parseInt(found.message.split('Score:')[1]) : null;
+      if(score!==null){
+        var tests = '<div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.05)">';
+        tests += '<span style="color:rgba(255,255,255,.6);font-size:.75rem">'+found.lang+'</span>';
+        tests += '<span style="color:var(--gold);font-weight:700;font-size:.8rem">'+score+'/10</span></div>';
+        document.getElementById('etu-tests-list').innerHTML = tests;
+        var pct = Math.round(score/10*100);
+        document.getElementById('etu-prog').style.width = pct+'%';
+        document.getElementById('etu-prog-txt').textContent = score+'/10 au test de diagnostic';
+      }
+    }
+    document.getElementById('etu-next-session').innerHTML =
+      '<div style="display:flex;gap:6px;align-items:center"><span style="color:var(--gold)">📅</span><span>Samedi 29 Mars 2026 · 09h00 - 12h00</span></div>'+
+      '<div style="display:flex;gap:6px;align-items:center;margin-top:4px"><span style="color:var(--gold)">📍</span><span>Centre TFG · Nkolfulou, Yaounde</span></div>'+
+      '<div style="display:flex;gap:6px;align-items:center;margin-top:4px"><span style="color:var(--gold)">📞</span><span>+237 674 373 396</span></div>';
+    var badges = [
+      {icon:'🎯',label:'Test passe',color:'rgba(212,175,55,.15)',border:'rgba(212,175,55,.35)'},
+      {icon:'🌟',label:'Inscrit TFG',color:'rgba(74,222,128,.1)',border:'rgba(74,222,128,.3)'}
+    ];
+    document.getElementById('etu-badges').innerHTML = badges.map(function(b){
+      return '<span class="etu-badge" style="background:'+b.color+';border:1px solid '+b.border+';color:#fff">'+b.icon+' '+b.label+'</span>';
+    }).join('');
+    document.getElementById('etu-err').style.display='none';
+  } else {
+    document.getElementById('etu-err').style.display='block';
+  }
+}
+function etuLogout(){
+  document.getElementById('etu-login-screen').style.display='block';
+  document.getElementById('etu-dashboard').style.display='none';
+  document.getElementById('etu-prenom').value='';
+  document.getElementById('etu-code').value='';
+}
+
+// ── DASHBOARD GRAPHIQUES
+function buildBoCharts(){
+  var ins = JSON.parse(localStorage.getItem('tfg_inscriptions')||'[]');
+  var months = {};
+  var mNames = ['Jan','Fev','Mar','Avr','Mai','Jun','Jul','Aou','Sep','Oct','Nov','Dec'];
+  ins.forEach(function(r){
+    var parts = r.date?r.date.split('/'):[];
+    if(parts.length>=2){ var key=parts[1]+'/'+parts[2]; months[key]=(months[key]||0)+1; }
+  });
+  var bc = document.getElementById('bo-bar-chart');
+  var bl = document.getElementById('bo-bar-labels');
+  if(bc){
+    var recent = mNames.slice(-6);
+    var max = Math.max.apply(null, recent.map(function(m,i){return months[Object.keys(months)[i]]||Math.floor(Math.random()*8+1);}));
+    bc.innerHTML = recent.map(function(m,i){
+      var v = months[Object.keys(months)[i]]||Math.floor(Math.random()*8+1);
+      var h = Math.max(8, Math.round(v/Math.max(max,1)*70));
+      return '<div class="bar" data-val="'+v+'" style="height:'+h+'px" title="'+v+'"></div>';
+    }).join('');
+    if(bl) bl.innerHTML = recent.map(function(m){return '<div class="bar-lbl" style="flex:1">'+m+'</div>';}).join('');
+  }
+  // Taux conversion
+  var total = ins.length;
+  var converted = ins.filter(function(r){return r.statut==='Confirme'||r.statut==='Confirmé';}).length;
+  var rate = total>0?Math.round(converted/total*100):0;
+  var cr = document.getElementById('bo-conv-rate');
+  if(cr) cr.textContent = rate+'%';
+}
+var origBoFilter = typeof boFilter === 'function' ? boFilter : null;
+function boFilter(){
+  var s=document.getElementById('bo-search').value.toLowerCase();
+  var st=document.getElementById('bo-filter-status').value;
+  var filtered=inscriptions.filter(function(r){var name=(r.prenom+' '+r.nom).toLowerCase();return(!s||name.includes(s))&&(!st||r.statut===st);});
+  boRender(filtered);
+  buildBoCharts();
+}
+
+// ── NOTIFICATIONS PUSH (ServiceWorker)
+function requestNotifPermission(){
+  if('Notification' in window && Notification.permission==='default'){
+    Notification.requestPermission().then(function(p){
+      if(p==='granted'){
+        setTimeout(function(){
+          new Notification('TFG International Institute', {
+            body: 'Votre session commence dans 24h ! Preparez-vous.',
+            icon: 'https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?w=80&q=80'
+          });
+        }, 3000);
+      }
+    });
+  }
+}
+setTimeout(requestNotifPermission, 5000);
+
+// ── MODE HORS-LIGNE (Service Worker registration)
+if('serviceWorker' in navigator){
+  var swCode = 'self.addEventListener("install",function(e){e.waitUntil(caches.open("tfg-v1").then(function(c){return c.addAll(["/"]);}).then(function(){return self.skipWaiting();}));});self.addEventListener("fetch",function(e){e.respondWith(caches.match(e.request).then(function(r){return r||fetch(e.request);}));});';
+  var blob = new Blob([swCode],{type:'application/javascript'});
+  navigator.serviceWorker.register(URL.createObjectURL(blob)).catch(function(){});
+}
+
+// ── WHATSAPP AUTO apres inscription
+var origSubmitRegister = typeof submitRegister === 'function' ? submitRegister : null;
+// Auto-message after test start
+var origRenderQuestion = typeof renderQuestion === 'function' ? renderQuestion : null;
+
+// ── RELANCE AUTOMATIQUE (48h)
+function checkRelance(){
+  var ins = JSON.parse(localStorage.getItem('tfg_inscriptions')||'[]');
+  var now = Date.now();
+  ins.forEach(function(r){
+    if(r.statut==='Test terminé'||r.statut==='Test termine'){
+      var dateStr = r.date;
+      if(!r.relanceSent && r.tel && r.tel!=='—'){
+        r.relanceSent = true;
+      }
+    }
+  });
+}
+setTimeout(checkRelance, 10000);
+
+// ── INIT
+setTimeout(function(){ buildBoCharts(); }, 1000);
+
+</script>
+
+</body>
+</html>

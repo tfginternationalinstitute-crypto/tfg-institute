@@ -2123,44 +2123,7 @@ Je souhaite m inscrire !';
 
 </script>
 <script>
-var SUPPORTS={'fr':['📄 Fascicule TCF/DELF','🎵 Audio MP3','✅ 200 Exercices'],'en':['📄 IELTS Guide','🎵 Listening MP3','✅ 200 Exercises']};
-var SESS={'fr':'Samedi 5 Avril · 09h00','en':'Samedi 5 Avril · 14h00'};
-
-function etuLogin(){
-  var prenom = document.getElementById('etu-prenom').value.trim();
-  var code = document.getElementById('etu-code').value.trim();
-  
-  // CODES DE SECOURS (ADMIN)
-  var ADMIN_CODES = ['1234', '9999', '2026'];
-
-  if(!prenom || !code){ alert('Veuillez entrer votre prénom et votre code TFG.'); return; }
-
-  var students = JSON.parse(localStorage.getItem('tfg_students')||'[]');
-  var foundS = students.find(function(s){
-     return s.prenom.toLowerCase() === prenom.toLowerCase() && s.code === code;
-  });
-
-  if(foundS || ADMIN_CODES.includes(code)){
-    document.getElementById('etu-login-screen').style.display='none';
-    document.getElementById('etu-dashboard').style.display='block';
-    document.getElementById('etu-nom').textContent='Bienvenue, ' + prenom + ' ! 👋';
-    
-    // Chargement automatique des supports
-    var sup = SUPPORTS['fr'];
-    document.getElementById('etu-supports').innerHTML = sup.map(function(s){
-      return '<div style="display:flex;justify-content:space-between;padding:8px;border-bottom:1px solid rgba(255,255,255,0.1)">' +
-             '<span style="font-size:0.8rem">' + s + '</span>' +
-             '<a href="https://wa.me/237674373396" style="color:#D4AF37;font-size:0.7rem;text-decoration:none">Accéder →</a></div>';
-    }).join('');
-  } else {
-    alert('Accès refusé. Vérifiez vos identifiants ou contactez le centre.');
-  }
-}
-
-function etuLogout(){
-  document.getElementById('etu-login-screen').style.display='block';
-  document.getElementById('etu-dashboard').style.display='none';
-}
+<script src="PATCH_TFG_MISSIONS.js"></script>
 </script>
 </body>
 </html>
